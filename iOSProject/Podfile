@@ -1,0 +1,61 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+# 忽略引入库的所有警告
+inhibit_all_warnings!
+
+target 'iOSProject' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for iOSProject
+  # 网络请求
+  pod 'AFNetworking'
+  
+  # 网络监控
+  pod 'Reachability'
+
+  #字典转模型
+  pod 'MJExtension'
+  # 下拉刷新
+  pod 'MJRefresh'
+  # 数据库
+  pod 'FMDB'
+  
+  # 蒙版
+  pod 'MBProgressHUD'
+  pod 'SVProgressHUD'
+  # 布局
+  pod 'Masonry'
+  # 图片加载
+  pod 'SDWebImage'
+  pod 'SDWebImage/GIF'
+  
+  # 全局滑动
+  pod 'FDFullscreenPopGesture'
+  
+  pod 'UITableView+FDTemplateLayoutCell'
+  # 无限轮播
+  pod 'SDCycleScrollView'
+  # 照片
+  pod 'TZImagePickerController'
+  # 列表视频
+  pod 'ZFPlayer'
+  # YYKit
+  #pod 'YYKit'
+  pod 'YYImage'
+  pod 'YYText'
+  pod 'YYAsyncLayer'
+  pod 'YYCategories'
+
+  target 'iOSProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iOSProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
