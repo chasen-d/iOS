@@ -8,8 +8,6 @@
 
 #import "UITableView+CSCellAnimation.h"
 
-#define CS_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
-#define CS_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
 @implementation UITableView (CSCellAnimation)
 
@@ -19,7 +17,7 @@
     for (int i = 0; i < cells.count; i++) {
         CGFloat totalTime = 0.4;
         UITableViewCell *cell = [self.visibleCells objectAtIndex:i];
-        cell.transform = CGAffineTransformMakeTranslation(-CS_SCREEN_WIDTH, 0);
+        cell.transform = CGAffineTransformMakeTranslation(-KSCREEN_WIDTH, 0);
         [UIView animateWithDuration:0.4 delay:i*(totalTime/cells.count) usingSpringWithDamping:0.7 initialSpringVelocity:1/0.7 options:UIViewAnimationOptionCurveEaseIn animations:^{
             cell.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
@@ -50,7 +48,7 @@
     
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [self.visibleCells objectAtIndex:i];
-        cell.transform = CGAffineTransformMakeTranslation(0, - CS_SCREEN_HEIGHT);
+        cell.transform = CGAffineTransformMakeTranslation(0, - KSCREEN_HEIGHT);
         [UIView animateWithDuration:0.3 delay:(cells.count - i)*(totalTime/cells.count) options:0 animations:^{
             cell.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
@@ -65,9 +63,9 @@
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [cells objectAtIndex:i];
         if (i%2 == 0) {
-            cell.transform = CGAffineTransformMakeTranslation(-CS_SCREEN_WIDTH,0);
+            cell.transform = CGAffineTransformMakeTranslation(-KSCREEN_WIDTH,0);
         }else {
-            cell.transform = CGAffineTransformMakeTranslation(CS_SCREEN_WIDTH,0);
+            cell.transform = CGAffineTransformMakeTranslation(KSCREEN_WIDTH,0);
         }
         [UIView animateWithDuration:0.4 delay:i*0.03 usingSpringWithDamping:0.75 initialSpringVelocity:1/0.75 options:0 animations:^{
             cell.transform = CGAffineTransformIdentity;
@@ -103,7 +101,7 @@
     
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [self.visibleCells objectAtIndex:i];
-        cell.transform = CGAffineTransformMakeTranslation(0,  CS_SCREEN_HEIGHT);
+        cell.transform = CGAffineTransformMakeTranslation(0, KSCREEN_HEIGHT);
         [UIView animateWithDuration:0.35 delay:i*(totalTime/cells.count) options:UIViewAnimationOptionCurveEaseOut animations:^{
             cell.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
@@ -118,7 +116,7 @@
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [cells objectAtIndex:i];
         cell.layer.opacity = 0.7;
-        cell.layer.transform = CATransform3DMakeTranslation(0, -CS_SCREEN_HEIGHT, 20);
+        cell.layer.transform = CATransform3DMakeTranslation(0, -KSCREEN_HEIGHT, 20);
         NSTimeInterval totalTime = 1.0;
         
         [UIView animateWithDuration:0.4 delay:i*(totalTime/cells.count) usingSpringWithDamping:0.65 initialSpringVelocity:1/0.65 options:UIViewAnimationOptionCurveEaseIn animations:^{

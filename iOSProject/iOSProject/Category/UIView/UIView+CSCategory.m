@@ -12,128 +12,149 @@
 
 #pragma mark Frame
 
-- (CGFloat)x
+- (CGFloat)cs_x
 {
     return self.frame.origin.x;
 }
 
-- (CGFloat)y
+- (CGFloat)cs_y
 {
     return self.frame.origin.y;
 }
 
-- (CGFloat)width
+- (CGFloat)cs_width
 {
     return self.frame.size.width;
 }
 
-- (CGFloat)height
+- (CGFloat)cs_height
 {
     return self.frame.size.height;
 }
 
-- (void)setX:(CGFloat)x
+-(void)setCs_x:(CGFloat)cs_x
 {
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = cs_x;
     self.frame = frame;
 }
 
-- (void)setY:(CGFloat)y
+- (void)setCs_y:(CGFloat)cs_y
 {
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = cs_y;
     self.frame = frame;
 }
 
-- (void)setWidth:(CGFloat)width
+- (void)setCs_width:(CGFloat)cs_width
 {
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = cs_width;
     self.frame = frame;
 }
 
-- (void)setHeight:(CGFloat)height
+- (void)setCs_height:(CGFloat)cs_height
 {
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = cs_height;
     self.frame = frame;
 }
 
-- (CGSize)size
+- (CGSize)cs_size
 {
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size
+- (void)setCs_size:(CGSize)cs_size
 {
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = cs_size;
     self.frame = frame;
 }
 
-- (CGPoint) origin {
+- (CGPoint)cs_origin {
     return self.frame.origin;
 }
 
-- (void) setOrigin:(CGPoint) point {
-    self.frame = CGRectMake(point.x, point.y, self.frame.size.width, self.frame.size.height);
+- (void) setCs_origin:(CGPoint)cs_origin {
+    self.frame = CGRectMake(cs_origin.x, cs_origin.y, self.frame.size.width, self.frame.size.height);
 }
 
-- (CGFloat)top {
-    return CGRectGetMinY(self.frame);
-}
-
-- (void) setTop:(CGFloat)top{
-    self.frame = CGRectMake(self.left, top, self.width, self.height);
-}
-
-- (CGFloat)bottom {
-    return self.y + self.height;
-}
-
-- (void)setBottom:(CGFloat)bottom {
-    self.frame = CGRectMake(self.x, bottom - self.height, self.width, self.height);
-}
-
-- (CGFloat)left {
+- (CGFloat)cs_originX{
     return CGRectGetMinX(self.frame);
 }
 
-- (void) setLeft:(CGFloat)left{
-    self.frame = CGRectMake(left, self.top, self.width, self.height);
+- (void)setCs_originX:(CGFloat)cs_originX{
+    CGRect rect = self.frame;
+    rect.origin.x = cs_originX;
+    self.frame = rect;
 }
 
-- (CGFloat)right {
-    return self.x + self.width;
+- (CGFloat)cs_originY{
+    return CGRectGetMinY(self.frame);
 }
 
-- (void)setRight:(CGFloat)right {
-    self.frame = CGRectMake(right - self.width, self.y, self.width, self.height);
+- (void)setCs_originY:(CGFloat)cs_originY{
+    
+    CGRect rect = self.frame;
+    rect.origin.y = cs_originY;
+    self.frame = rect;
 }
 
-- (void)setCenterX:(CGFloat)centerX
-{
-    CGPoint center = self.center;
-    center.x = centerX;
-    self.center = center;
+- (CGFloat)cs_top {
+    return CGRectGetMinY(self.frame);
 }
 
-- (CGFloat)centerX
+- (void) setCs_top:(CGFloat)cs_top{
+    self.frame = CGRectMake(self.left, cs_top, self.width, self.height);
+}
+
+- (CGFloat)cs_bottom {
+    return self.cs_y + self.height;
+}
+
+- (void)setCs_bottom:(CGFloat)cs_bottom {
+    self.frame = CGRectMake(self.cs_x, cs_bottom - self.height, self.width, self.height);
+}
+
+- (CGFloat)cs_left {
+    return CGRectGetMinX(self.frame);
+}
+
+- (void) setCs_left:(CGFloat)cs_left{
+    self.frame = CGRectMake(cs_left, self.top, self.width, self.height);
+}
+
+- (CGFloat)cs_right {
+    return self.cs_x + self.width;
+}
+
+- (void)setCs_right:(CGFloat)cs_right {
+    self.frame = CGRectMake(cs_right - self.width, self.cs_y, self.width, self.height);
+}
+
+- (CGFloat)cs_centerX
 {
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY
+- (void)setCs_centerX:(CGFloat)cs_centerX
 {
     CGPoint center = self.center;
-    center.y = centerY;
+    center.x = cs_centerX;
     self.center = center;
 }
 
-- (CGFloat)centerY
+- (CGFloat)cs_centerY
 {
     return self.center.y;
+}
+
+- (void)setCs_centerY:(CGFloat)cs_centerY
+{
+    CGPoint center = self.center;
+    center.y = cs_centerY;
+    self.center = center;
 }
 
 

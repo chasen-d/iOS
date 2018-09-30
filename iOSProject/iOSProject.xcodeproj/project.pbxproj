@@ -12,6 +12,21 @@
 		40043137215DFEE80011CD91 /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40043133215DFEE80011CD91 /* AdvertiseView.m */; };
 		40043138215DFEE80011CD91 /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 40043134215DFEE80011CD91 /* AdvertiseHelper.m */; };
 		4004313C215E0F6B0011CD91 /* CSBasicKnowledgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004313B215E0F6B0011CD91 /* CSBasicKnowledgeController.m */; };
+		40043140215F272E0011CD91 /* CSAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004313F215F272E0011CD91 /* CSAlertViewController.m */; };
+		40043149215F29E30011CD91 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40043144215F29E30011CD91 /* JXTAlertController.m */; };
+		4004314A215F29E30011CD91 /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40043148215F29E30011CD91 /* JXTAlertView.m */; };
+		4004314E215F4ADB0011CD91 /* CSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004314D215F4ADB0011CD91 /* CSWebViewController.m */; };
+		40043151215F57AA0011CD91 /* CSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40043150215F57AA0011CD91 /* CSNavigationBar.m */; };
+		4004315E2160750C0011CD91 /* UINavigationBar+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431542160750C0011CD91 /* UINavigationBar+SXFixSpace.m */; };
+		4004315F2160750C0011CD91 /* UINavigationItem+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431552160750C0011CD91 /* UINavigationItem+SXFixSpace.m */; };
+		400431602160750C0011CD91 /* UINavigationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431582160750C0011CD91 /* UINavigationConfig.m */; };
+		400431612160750C0011CD91 /* UINavigationController+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004315A2160750C0011CD91 /* UINavigationController+SXFixSpace.m */; };
+		400431622160750C0011CD91 /* NSObject+SXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004315D2160750C0011CD91 /* NSObject+SXRuntime.m */; };
+		400431652160753A0011CD91 /* UIBarButtonItem+SXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431642160753A0011CD91 /* UIBarButtonItem+SXCreate.m */; };
+		4004316921609C910011CD91 /* CSTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004316821609C910011CD91 /* CSTouchIDViewController.m */; };
+		4004316C21609F0B0011CD91 /* TDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004316B21609F0B0011CD91 /* TDTouchID.m */; };
+		400431702160A8B30011CD91 /* CSCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004316F2160A8B30011CD91 /* CSCustomAlertViewController.m */; };
+		400431742160AAE80011CD91 /* CSmessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431732160AAE80011CD91 /* CSmessageView.m */; };
 		40AAC0AD212D3ED1009968C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AAC0AC212D3ED1009968C2 /* AppDelegate.m */; };
 		40AAC0B5212D3ED2009968C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AAC0B4212D3ED2009968C2 /* Assets.xcassets */; };
 		40AAC0BB212D3ED2009968C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AAC0BA212D3ED2009968C2 /* main.m */; };
@@ -84,6 +99,37 @@
 		40043136215DFEE80011CD91 /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
 		4004313A215E0F6B0011CD91 /* CSBasicKnowledgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSBasicKnowledgeController.h; sourceTree = "<group>"; };
 		4004313B215E0F6B0011CD91 /* CSBasicKnowledgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSBasicKnowledgeController.m; sourceTree = "<group>"; };
+		4004313E215F272E0011CD91 /* CSAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAlertViewController.h; sourceTree = "<group>"; };
+		4004313F215F272E0011CD91 /* CSAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAlertViewController.m; sourceTree = "<group>"; };
+		40043143215F29E30011CD91 /* JXTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertController.h; sourceTree = "<group>"; };
+		40043144215F29E30011CD91 /* JXTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertController.m; sourceTree = "<group>"; };
+		40043145215F29E30011CD91 /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertManagerHeader.h; sourceTree = "<group>"; };
+		40043147215F29E30011CD91 /* JXTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertView.h; sourceTree = "<group>"; };
+		40043148215F29E30011CD91 /* JXTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertView.m; sourceTree = "<group>"; };
+		4004314C215F4ADB0011CD91 /* CSWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSWebViewController.h; sourceTree = "<group>"; };
+		4004314D215F4ADB0011CD91 /* CSWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSWebViewController.m; sourceTree = "<group>"; };
+		4004314F215F57AA0011CD91 /* CSNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSNavigationBar.h; sourceTree = "<group>"; };
+		40043150215F57AA0011CD91 /* CSNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSNavigationBar.m; sourceTree = "<group>"; };
+		400431542160750C0011CD91 /* UINavigationBar+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SXFixSpace.m"; sourceTree = "<group>"; };
+		400431552160750C0011CD91 /* UINavigationItem+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+SXFixSpace.m"; sourceTree = "<group>"; };
+		400431562160750C0011CD91 /* UINavigationController+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SXFixSpace.h"; sourceTree = "<group>"; };
+		400431572160750C0011CD91 /* NSObject+SXRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SXRuntime.h"; sourceTree = "<group>"; };
+		400431582160750C0011CD91 /* UINavigationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationConfig.m; sourceTree = "<group>"; };
+		400431592160750C0011CD91 /* UINavigationBar+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SXFixSpace.h"; sourceTree = "<group>"; };
+		4004315A2160750C0011CD91 /* UINavigationController+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SXFixSpace.m"; sourceTree = "<group>"; };
+		4004315B2160750C0011CD91 /* UINavigationItem+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+SXFixSpace.h"; sourceTree = "<group>"; };
+		4004315C2160750C0011CD91 /* UINavigationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationConfig.h; sourceTree = "<group>"; };
+		4004315D2160750C0011CD91 /* NSObject+SXRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SXRuntime.m"; sourceTree = "<group>"; };
+		400431632160753A0011CD91 /* UIBarButtonItem+SXCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SXCreate.h"; sourceTree = "<group>"; };
+		400431642160753A0011CD91 /* UIBarButtonItem+SXCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SXCreate.m"; sourceTree = "<group>"; };
+		4004316721609C910011CD91 /* CSTouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSTouchIDViewController.h; sourceTree = "<group>"; };
+		4004316821609C910011CD91 /* CSTouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSTouchIDViewController.m; sourceTree = "<group>"; };
+		4004316A21609F0B0011CD91 /* TDTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTouchID.h; sourceTree = "<group>"; };
+		4004316B21609F0B0011CD91 /* TDTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTouchID.m; sourceTree = "<group>"; };
+		4004316E2160A8B30011CD91 /* CSCustomAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCustomAlertViewController.h; sourceTree = "<group>"; };
+		4004316F2160A8B30011CD91 /* CSCustomAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCustomAlertViewController.m; sourceTree = "<group>"; };
+		400431722160AAE80011CD91 /* CSmessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSmessageView.h; sourceTree = "<group>"; };
+		400431732160AAE80011CD91 /* CSmessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSmessageView.m; sourceTree = "<group>"; };
 		40AAC0A8212D3ED1009968C2 /* iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AAC0AB212D3ED1009968C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40AAC0AC212D3ED1009968C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -215,10 +261,121 @@
 		40043139215E0EF00011CD91 /* BasicKnowledge(基础知识) */ = {
 			isa = PBXGroup;
 			children = (
+				4004316621609C5D0011CD91 /* 指纹解锁 */,
+				4004313D215F26F60011CD91 /* AlertView */,
 				4004313A215E0F6B0011CD91 /* CSBasicKnowledgeController.h */,
 				4004313B215E0F6B0011CD91 /* CSBasicKnowledgeController.m */,
 			);
 			path = "BasicKnowledge(基础知识)";
+			sourceTree = "<group>";
+		};
+		4004313D215F26F60011CD91 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				4004316D2160A8520011CD91 /* 自定义弹出视图 */,
+				40043141215F29E30011CD91 /* JXTAlertManager */,
+				4004313E215F272E0011CD91 /* CSAlertViewController.h */,
+				4004313F215F272E0011CD91 /* CSAlertViewController.m */,
+				4004316E2160A8B30011CD91 /* CSCustomAlertViewController.h */,
+				4004316F2160A8B30011CD91 /* CSCustomAlertViewController.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		40043141215F29E30011CD91 /* JXTAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				40043142215F29E30011CD91 /* AlertController */,
+				40043145215F29E30011CD91 /* JXTAlertManagerHeader.h */,
+				40043146215F29E30011CD91 /* AlertView */,
+			);
+			path = JXTAlertManager;
+			sourceTree = "<group>";
+		};
+		40043142215F29E30011CD91 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				40043143215F29E30011CD91 /* JXTAlertController.h */,
+				40043144215F29E30011CD91 /* JXTAlertController.m */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		40043146215F29E30011CD91 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				40043147215F29E30011CD91 /* JXTAlertView.h */,
+				40043148215F29E30011CD91 /* JXTAlertView.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		4004314B215F4AAD0011CD91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4004314C215F4ADB0011CD91 /* CSWebViewController.h */,
+				4004314D215F4ADB0011CD91 /* CSWebViewController.m */,
+				40AAC0E3212D5901009968C2 /* CSNavigationController.h */,
+				40AAC0E4212D5901009968C2 /* CSNavigationController.m */,
+				40AAC0E6212E619A009968C2 /* CSBaseViewController.h */,
+				40AAC0E7212E619A009968C2 /* CSBaseViewController.m */,
+				40B5324D214A0C4B00D0FC20 /* CSBaseTableViewController.h */,
+				40B5324E214A0C4B00D0FC20 /* CSBaseTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40043152216074E20011CD91 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				400431532160750C0011CD91 /* UINavigation-SXFixSpace */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		400431532160750C0011CD91 /* UINavigation-SXFixSpace */ = {
+			isa = PBXGroup;
+			children = (
+				400431632160753A0011CD91 /* UIBarButtonItem+SXCreate.h */,
+				400431642160753A0011CD91 /* UIBarButtonItem+SXCreate.m */,
+				400431542160750C0011CD91 /* UINavigationBar+SXFixSpace.m */,
+				400431552160750C0011CD91 /* UINavigationItem+SXFixSpace.m */,
+				400431562160750C0011CD91 /* UINavigationController+SXFixSpace.h */,
+				400431572160750C0011CD91 /* NSObject+SXRuntime.h */,
+				400431582160750C0011CD91 /* UINavigationConfig.m */,
+				400431592160750C0011CD91 /* UINavigationBar+SXFixSpace.h */,
+				4004315A2160750C0011CD91 /* UINavigationController+SXFixSpace.m */,
+				4004315B2160750C0011CD91 /* UINavigationItem+SXFixSpace.h */,
+				4004315C2160750C0011CD91 /* UINavigationConfig.h */,
+				4004315D2160750C0011CD91 /* NSObject+SXRuntime.m */,
+			);
+			path = "UINavigation-SXFixSpace";
+			sourceTree = "<group>";
+		};
+		4004316621609C5D0011CD91 /* 指纹解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				4004316721609C910011CD91 /* CSTouchIDViewController.h */,
+				4004316821609C910011CD91 /* CSTouchIDViewController.m */,
+			);
+			path = "指纹解锁";
+			sourceTree = "<group>";
+		};
+		4004316D2160A8520011CD91 /* 自定义弹出视图 */ = {
+			isa = PBXGroup;
+			children = (
+				400431712160AAA80011CD91 /* 仿QQ提示 */,
+			);
+			path = "自定义弹出视图";
+			sourceTree = "<group>";
+		};
+		400431712160AAA80011CD91 /* 仿QQ提示 */ = {
+			isa = PBXGroup;
+			children = (
+				400431722160AAE80011CD91 /* CSmessageView.h */,
+				400431732160AAE80011CD91 /* CSmessageView.m */,
+			);
+			path = "仿QQ提示";
 			sourceTree = "<group>";
 		};
 		40AAC09F212D3ED0009968C2 = {
@@ -281,6 +438,7 @@
 		40AAC0DE212D524E009968C2 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				40043152216074E20011CD91 /* Vendor */,
 				40043132215DFEE80011CD91 /* 广告页 */,
 				40B5325C214A3B1100D0FC20 /* HomePage */,
 				40AAC0DF212D52B0009968C2 /* Main */,
@@ -295,12 +453,6 @@
 				40B532332147B3DA00D0FC20 /* Controller */,
 				40AAC0E0212D52EF009968C2 /* CSTabBarController.h */,
 				40AAC0E1212D52EF009968C2 /* CSTabBarController.m */,
-				40AAC0E3212D5901009968C2 /* CSNavigationController.h */,
-				40AAC0E4212D5901009968C2 /* CSNavigationController.m */,
-				40AAC0E6212E619A009968C2 /* CSBaseViewController.h */,
-				40AAC0E7212E619A009968C2 /* CSBaseViewController.m */,
-				40B5324D214A0C4B00D0FC20 /* CSBaseTableViewController.h */,
-				40B5324E214A0C4B00D0FC20 /* CSBaseTableViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -421,6 +573,7 @@
 		40B5322B2147A53D00D0FC20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4004314B215F4AAD0011CD91 /* ViewController */,
 				40B53257214A348B00D0FC20 /* Utils(工具类) */,
 				40B532462147BD7800D0FC20 /* View */,
 				40B5322C2147A57F00D0FC20 /* Macro */,
@@ -453,6 +606,8 @@
 			children = (
 				40B532482147BD8A00D0FC20 /* YYFPSLabel.h */,
 				40B532472147BD8A00D0FC20 /* YYFPSLabel.m */,
+				4004314F215F57AA0011CD91 /* CSNavigationBar.h */,
+				40043150215F57AA0011CD91 /* CSNavigationBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,6 +626,8 @@
 		40B53257214A348B00D0FC20 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				4004316A21609F0B0011CD91 /* TDTouchID.h */,
+				4004316B21609F0B0011CD91 /* TDTouchID.m */,
 				40B53258214A34F000D0FC20 /* CSToolKit */,
 			);
 			path = "Utils(工具类)";
@@ -836,8 +993,12 @@
 				40B53260214A3BB000D0FC20 /* CSAnimationListTableViewController.m in Sources */,
 				40AAC0E2212D52EF009968C2 /* CSTabBarController.m in Sources */,
 				40AAC0BB212D3ED2009968C2 /* main.m in Sources */,
+				400431602160750C0011CD91 /* UINavigationConfig.m in Sources */,
+				400431742160AAE80011CD91 /* CSmessageView.m in Sources */,
+				4004314E215F4ADB0011CD91 /* CSWebViewController.m in Sources */,
 				40B5326F214A408A00D0FC20 /* TableViewAnimationKit.m in Sources */,
 				40B5325B214A353D00D0FC20 /* CSUIFactory.m in Sources */,
+				400431652160753A0011CD91 /* UIBarButtonItem+SXCreate.m in Sources */,
 				40B532492147BD8A00D0FC20 /* YYFPSLabel.m in Sources */,
 				40B5322721479F4400D0FC20 /* UIColor+CSCategory.m in Sources */,
 				40B5324F214A0C4B00D0FC20 /* CSBaseTableViewController.m in Sources */,
@@ -847,11 +1008,20 @@
 				4004313C215E0F6B0011CD91 /* CSBasicKnowledgeController.m in Sources */,
 				40B5327F214A4E8800D0FC20 /* CSChangeIconViewController.m in Sources */,
 				40AAC0E5212D5901009968C2 /* CSNavigationController.m in Sources */,
+				40043140215F272E0011CD91 /* CSAlertViewController.m in Sources */,
 				40B5327B214A4E0400D0FC20 /* CSNewFunctionViewController.m in Sources */,
 				40B532162147965F00D0FC20 /* UITableView+CSCellAnimation.m in Sources */,
+				4004314A215F29E30011CD91 /* JXTAlertView.m in Sources */,
+				4004315E2160750C0011CD91 /* UINavigationBar+SXFixSpace.m in Sources */,
 				40B5324C2147BDF700D0FC20 /* UIView+CSCategory.m in Sources */,
 				40B5322A2147A23900D0FC20 /* UIButton+CSCategory.m in Sources */,
+				400431622160750C0011CD91 /* NSObject+SXRuntime.m in Sources */,
+				4004316921609C910011CD91 /* CSTouchIDViewController.m in Sources */,
+				40043149215F29E30011CD91 /* JXTAlertController.m in Sources */,
+				400431612160750C0011CD91 /* UINavigationController+SXFixSpace.m in Sources */,
+				400431702160A8B30011CD91 /* CSCustomAlertViewController.m in Sources */,
 				40B53264214A3CE900D0FC20 /* CSShowTableViewController.m in Sources */,
+				4004316C21609F0B0011CD91 /* TDTouchID.m in Sources */,
 				40B53267214A3D8400D0FC20 /* CSTableViewAnimationlistController.m in Sources */,
 				40B532392147B78B00D0FC20 /* CSTwoViewController.m in Sources */,
 				40B53278214A4CFE00D0FC20 /* CSFunctionListViewController.m in Sources */,
@@ -860,7 +1030,9 @@
 				40B532362147B77B00D0FC20 /* CSOneViewController.m in Sources */,
 				40043138215DFEE80011CD91 /* AdvertiseHelper.m in Sources */,
 				40B53256214A322E00D0FC20 /* CSMainDataModel.m in Sources */,
+				4004315F2160750C0011CD91 /* UINavigationItem+SXFixSpace.m in Sources */,
 				40B53270214A408A00D0FC20 /* UITableView+XSAnimationKit.m in Sources */,
+				40043151215F57AA0011CD91 /* CSNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

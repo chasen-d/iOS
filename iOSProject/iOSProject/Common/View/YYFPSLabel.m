@@ -56,8 +56,8 @@
         if (sender.state == UIGestureRecognizerStateEnded) {
             
             [UIView animateWithDuration:0.2 animations:^{
-                weakSelf.x = (weakSelf.x - kScreenWidth * 0.5) > 0 ? (kScreenWidth - weakSelf.width - 20) : 20;
-                weakSelf.y = weakSelf.y > 80 ? weakSelf.y : 80;
+                weakSelf.cs_x = (weakSelf.cs_x - kScreenWidth * 0.5) > 0 ? (kScreenWidth - weakSelf.width - 20) : 20;
+                weakSelf.cs_y = weakSelf.cs_y > 80 ? weakSelf.cs_y : 80;
             }];
         }
         

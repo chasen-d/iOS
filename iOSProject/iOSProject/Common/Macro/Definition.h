@@ -34,8 +34,8 @@
 #define fourInch ([UIScreen mainScreen].bounds.size.height == 568)
 
 // 4.屏幕大小尺寸
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define KSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define KSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 //获取屏幕宽度与高度
 //#define kScreenWidth \
@@ -74,20 +74,6 @@
 //7.
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
-//8
-#define Global_BlueColor @"408AFF"
-#define Global_GrayColor @"#CCCCCC"
-#define Global_LineColor @"F5F5F5"
-#define Global_CellLineGrayColor @"#D2D2DA"
-#define Global_CellLineColor @"#D2D2DA"
-#define Global_BlueColor @"408AFF"
-#define Global_LabelColor @"#26272A"
-#define Global_NormalLabelColor @"#757A81"
-#define Global_BackgroundColor @"#F9FAFB"
-//9
-#define NavigationBar_Title_FontSize 19
-#define NavigationBar_ItemTitle_FontSize 17
-#define NetworkErrorViewTag 20161115//网络无法连接tag
 
 //字符串是否为空
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
@@ -129,24 +115,8 @@
 //字体
 #define CSDEFAULT_FONT(f) [UIFont systemFontOfSize:f]//系统字体
 //iPhone 字体适配
-#define FontSize(FONT) [UIFont systemFontOfSize:((FONT)*screen_width/375)]
+#define FontSize(FONT) [UIFont systemFontOfSize:((FONT)*KSCREEN_WIDTH/375)]
 
-
-#ifdef International
-#define CCNormalFontSize(nFontSize)  [UIFont systemFontOfSize:nFontSize]
-#define CCBoldFontSize(nFontSize) [UIFont boldSystemFontOfSize:nFontSize]
-#define CCDefNoramlFontName @"Helvetica"
-#else
-#define CCNormalFontSize(nFontSize)  IOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")?[UIFont fontWithName:@"STHeitiSC-Light" size:nFontSize]:[UIFont systemFontOfSize:nFontSize]
-#define CCBoldFontSize(nFontSize) IOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")?[UIFont fontWithName:@"STHeitiSC-Medium" size:nFontSize]:[UIFont boldSystemFontOfSize:nFontSize]
-#define CCDefNoramlFontName @"STHeitiSC-Light"
-#endif
-
-
-#define CCLightFontSize(nFontSize)  [CCBaseTools  lightFontSize:nFontSize]
-#define CCMediumFontSize(nFontSize) [CCBaseTools mediumFontSize:nFontSize]
-#define CCSemiboldFontSize(nFontSize) [CCBaseTools semiboldFontSize:nFontSize]
-#define CCRegularFontSize(nFontSize) [CCBaseTools regularFontSize:nFontSize]
 
 #define IsEqualToString(str1,str2) [[NSString stringWithFormat:@"%@",str1] isEqualToString:[NSString stringWithFormat:@"%@",str2]]
 
@@ -187,12 +157,15 @@ typedef void (^AFRequestSuccessBlock)(BOOL isSuccess ,id  _Nonnull  responseObje
 typedef void (^AFRequestFailureBlock)(BOOL isSuccess, NSString *  _Nonnull msg, NSError *  _Nonnull error);
 
 
-
-
 //-----------------------循环引用-------------
 
 #define WeakSelf(type)  __weak typeof(type) weak##type = type; // weak
 #define StrongSelf(type)  __strong typeof(type) type = weak##type; // strong
+
+/**
+ *  属性转字符串
+ */
+#define CSKeyPath(obj, key) @(((void)obj.key, #key))
 
 //-----------------------NSUserDefaults实例化的宏定义-------------
 #define UserDefaultSetObjectForKey(__VALUE__,__KEY__) \
@@ -237,6 +210,14 @@ typedef void (^AFRequestFailureBlock)(BOOL isSuccess, NSString *  _Nonnull msg, 
 #define TICK NSDate *startTime = [NSDate date];
 #define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);
 
+//判断是真机还是模拟器
+#if TARGET_OS_IPHONE
+
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+
+#endif
 
 //------------GCD-----------
 //GCD代码只执行一次
@@ -306,7 +287,8 @@ typedef NS_ENUM(NSInteger,DataLoadingType)
 #endif
 
 // 判断是否是iPhone X
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhoneX (KSCREEN_HEIGHT >= 812 ? YES:NO)
 // 状态栏高度
 #define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
 // 导航栏高度
@@ -357,6 +339,6 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
-#define UISreenWidthScale   screen_width / 320
+#define UISreenWidthScale   KSCREEN_WIDTH / 320
 
 #endif
