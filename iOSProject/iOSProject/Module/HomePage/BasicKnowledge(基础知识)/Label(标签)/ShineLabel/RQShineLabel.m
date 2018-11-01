@@ -17,7 +17,7 @@
 @property (assign, nonatomic) CFTimeInterval beginTime;
 @property (assign, nonatomic) CFTimeInterval endTime;
 @property (assign, nonatomic, getter = isFadedOut) BOOL fadedOut;
-@property (nonatomic, copy) void (^completion)();
+@property (nonatomic, copy) void (^completion)(void);
 
 @end
 
@@ -110,7 +110,7 @@
   [self shineWithCompletion:NULL];
 }
 
-- (void)shineWithCompletion:(void (^)())completion
+- (void)shineWithCompletion:(void (^)(void))completion
 {
   
   if (!self.isShining && self.isFadedOut) {
@@ -125,7 +125,7 @@
   [self fadeOutWithCompletion:NULL];
 }
 
-- (void)fadeOutWithCompletion:(void (^)())completion
+- (void)fadeOutWithCompletion:(void (^)(void))completion
 {
   if (!self.isShining && !self.isFadedOut) {
     self.completion = completion;

@@ -726,10 +726,10 @@
 		40487806218AEB9600507C64 /* ShineLabel */ = {
 			isa = PBXGroup;
 			children = (
-				40487807218AEB9600507C64 /* RQShineLabel.m */,
-				40487808218AEB9600507C64 /* YFShineLabelViewController.m */,
-				40487809218AEB9600507C64 /* YFShineLabelViewController.h */,
 				4048780A218AEB9600507C64 /* RQShineLabel.h */,
+				40487807218AEB9600507C64 /* RQShineLabel.m */,
+				40487809218AEB9600507C64 /* YFShineLabelViewController.h */,
+				40487808218AEB9600507C64 /* YFShineLabelViewController.m */,
 			);
 			path = ShineLabel;
 			sourceTree = "<group>";

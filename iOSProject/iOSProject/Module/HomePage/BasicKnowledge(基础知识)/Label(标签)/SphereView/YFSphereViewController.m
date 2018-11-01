@@ -47,14 +47,14 @@
     
     
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame=CGRectMake((self.view.frame.size.width-120)/2, self.view.frame.size.height-60, 120, 30);
+    btn.frame = CGRectMake((KSCREEN_WIDTH-120)/2, CGRectGetMaxY(sphereView.frame)+20, 120, 30);
     [self.view addSubview:btn];
-    btn.backgroundColor=[UIColor whiteColor];
+    btn.backgroundColor = [UIColor whiteColor];
     btn.layer.borderWidth=1;
     btn.layer.borderColor=[[UIColor orangeColor] CGColor];
     [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [btn setTitle:@"start/stop" forState:UIControlStateNormal];
-    btn.selected=NO;
+    
     [btn addTarget:self action:@selector(changePF:) forControlEvents:UIControlEventTouchUpInside];
     
 }

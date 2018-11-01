@@ -15,7 +15,7 @@
 #define DURATION 16
 
 #define FIREINTERVAL 2
-@interface CloudView ()
+@interface CloudView ()<CAAnimationDelegate>
 {
     NSArray *dataARy;
     NSInteger index;
@@ -51,8 +51,8 @@
     NSObject *ob2=[dataARy objectAtModuloIndex:tempIndex];
     CGFloat width2=[(NSString *)ob2 sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(1000, FONTHEIGHT)].width;
     ++tempIndex    ;
-    NSObject *ob3=[dataARy objectAtModuloIndex:tempIndex];
-    CGFloat width3=[(NSString *)ob3 sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(1000, FONTHEIGHT)].width;
+    NSObject *ob3 = [dataARy objectAtModuloIndex:tempIndex];
+    CGFloat width3 = [(NSString *)ob3 sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(1000, FONTHEIGHT)].width;
     //如果三条显示的长度太长 就取两条显示
     if (width1+width2+width3>280) {
         //如果两条显示的长度太长 就取一条显示
@@ -188,7 +188,7 @@
         keyPosi.fillMode=kCAFillModeForwards;
         keyPosi.removedOnCompletion=NO;
         keyPosi.duration=DURATION;
-        keyPosi.delegate=self;
+        keyPosi.delegate = self;
         [keyPosi setValue:label forKeyPath:@"itslayer"];
         keyPosi.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [label.layer addAnimation:keyPosi forKey:@"x"];

@@ -37,16 +37,32 @@
 		UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
 		panRecognizer.minimumNumberOfTouches = 1;
 		[self addGestureRecognizer:panRecognizer];
-		
+#if __has_feature(objc_arc)
+#else
+		[panRecognizer release];
+#endif
+        
 		UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
 		[self addGestureRecognizer:pinchRecognizer];
-		
+#if __has_feature(objc_arc)
+#else
+		[pinchRecognizer release];
+#endif
+
 		UIRotationGestureRecognizer *rotationRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotationGesture:)];
 		[self addGestureRecognizer:rotationRecognizer];
-		
+#if __has_feature(objc_arc)
+#else
+		[rotationRecognizer release];
+#endif
+	
 		UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
 		tapRecognizer.numberOfTapsRequired = 1;
 		[self addGestureRecognizer:tapRecognizer];
+#if __has_feature(objc_arc)
+#else
+		[tapRecognizer release];
+#endif
         
         intervalX=1;
     }
@@ -74,6 +90,10 @@
 }
 
 - (void)setItems:(NSArray *)items {
+#if __has_feature(objc_arc)
+#else
+	[pointMap release];
+#endif
 	pointMap = [[NSMutableDictionary alloc] init];
 	
 	NSArray *spherePoints = [PFGoldenSectionSpiral sphere:items.count];
@@ -315,10 +335,20 @@
 }
 
 - (void)dealloc {
+#if __has_feature(objc_arc)
+    pointMap=nil;
     if ([_timer isValid]) {
         [_timer invalidate];
     }
+#else
+	[pointMap release];
+    if ([_timer isValid]) {
+        [_timer invalidate];
+    }
+	[_timer release];
+    
+    [super dealloc];
+#endif
 }
-
 
 @end

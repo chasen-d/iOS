@@ -40,8 +40,8 @@
  *  Start the animation
  */
 - (void)shine;
-- (void)shineWithCompletion:(void (^)())completion;
+- (void)shineWithCompletion:(void (^)(void))completion;
 - (void)fadeOut;
-- (void)fadeOutWithCompletion:(void (^)())completion;
+- (void)fadeOutWithCompletion:(void (^)(void))completion;
 
 @end
