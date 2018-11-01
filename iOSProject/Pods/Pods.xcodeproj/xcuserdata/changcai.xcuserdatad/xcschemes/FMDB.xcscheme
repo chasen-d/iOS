@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3B1490ADFF2E0A5A13B4C445576BB03"
+               BlueprintIdentifier = "C7E40E341D246AAEB4DA0A3317D0C816"
                BuildableName = "libFMDB.a"
                BlueprintName = "FMDB"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F3B1490ADFF2E0A5A13B4C445576BB03"
+            BlueprintIdentifier = "C7E40E341D246AAEB4DA0A3317D0C816"
             BuildableName = "libFMDB.a"
             BlueprintName = "FMDB"
             ReferencedContainer = "container:Pods.xcodeproj">

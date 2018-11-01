@@ -40,7 +40,7 @@
         [self.tableView setLayoutMargins:UIEdgeInsetsZero];
     }
     
-    self.dataSoureArray = @[@{@"title":@"功基础知识",@"className":@"CSBasicKnowledgeController"},
+    self.dataSoureArray = @[@{@"title":@"基础知识",@"className":@"CSBasicKnowledgeController"},
                            @{@"title":@"功能集合(直接拿来用)",@"className":@"CSFunctionListViewController"},
                            @{@"title":@"动画效果",@"className":@"CSAnimationListTableViewController"},
                            ];

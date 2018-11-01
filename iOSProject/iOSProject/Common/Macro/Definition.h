@@ -162,6 +162,9 @@ typedef void (^AFRequestFailureBlock)(BOOL isSuccess, NSString *  _Nonnull msg, 
 #define WeakSelf(type)  __weak typeof(type) weak##type = type; // weak
 #define StrongSelf(type)  __strong typeof(type) type = weak##type; // strong
 
+#define selfWeak(type) autoreleasepool{} __weak typeof(type) type##Weak = type;
+#define selfStrong(type) autoreleasepool{} __strong typeof(type##Weak) type##Strong = type##Weak;
+
 /**
  *  属性转字符串
  */
@@ -278,12 +281,12 @@ typedef NS_ENUM(NSInteger,DataLoadingType)
 
 //是否为iPhone6，6s,7
 #ifndef iPhone6
-#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?(CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)): NO)
 #endif
 
 //是否为iPhone6P，7P
 #ifndef iPhone6P
-#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?(CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) ||CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
 #endif
 
 // 判断是否是iPhone X
@@ -325,20 +328,5 @@ dispatch_async(dispatch_get_main_queue(), block);\
 }
 
 
-#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
-
-#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
-
-
-
-#define SuppressPerformSelectorLeakWarning(Stuff) \
-do { \
-_Pragma("clang diagnostic push") \
-_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
-Stuff; \
-_Pragma("clang diagnostic pop") \
-} while (0)
-
-#define UISreenWidthScale   KSCREEN_WIDTH / 320
 
 #endif

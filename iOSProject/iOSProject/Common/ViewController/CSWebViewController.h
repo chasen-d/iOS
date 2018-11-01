@@ -47,12 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
 /**  **/
 @property (nonatomic, copy) NSString *contentHTML;
 
-// 页面加载完调用, 必须调用super
-//- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation NS_REQUIRES_SUPER;
-
-
-// 页面加载失败时调用, 必须调用super
-//- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error NS_REQUIRES_SUPER;
 
 @end
 

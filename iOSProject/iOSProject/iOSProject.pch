@@ -45,7 +45,8 @@
 
 //分类（类别）
 #import "UIColor+CSCategory.h"
-//#import "UIImage+CSCategory.h"
+#import "UIImage+CSCategory.h"
+#import "UIImageView+CSCategory.h"
 #import "UIView+CSCategory.h"
 
 //第三方

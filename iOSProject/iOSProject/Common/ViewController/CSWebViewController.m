@@ -150,6 +150,9 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     
     NSLog(@"decidePolicyForNavigationAction   ====    %@", navigationAction);
+    if (navigationAction.targetFrame == nil) {
+        [webView loadRequest:navigationAction.request];
+    }
     decisionHandler(WKNavigationActionPolicyAllow);
     
 }
@@ -165,6 +168,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler {
     
     NSLog(@"decidePolicyForNavigationResponse   ====    %@", navigationResponse);
+    
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 
@@ -180,19 +184,19 @@
     NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
     completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
     
-    //    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
-    //        if ([challenge previousFailureCount] == 0) {
-    //
-    //            NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
-    //            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
-    //        } else {
-    //
-    //            completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
-    //        }
-    //    } else {
-    //
-    //        completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
-    //    }
+//    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+//        if ([challenge previousFailureCount] == 0) {
+//
+//            NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+//            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+//        } else {
+//
+//            completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+//        }
+//    } else {
+//
+//        completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+//    }
 }
 
 // 7页面加载完调用
@@ -204,7 +208,7 @@
 // 8页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
     NSLog(@"didFailProvisionalNavigation   ====    %@\nerror   ====   %@", navigation, error);
-    [JXTAlertView showToastViewWithTitle:@"网页加载失败" message:@"" duration:2 dismissCompletion:^(NSInteger buttonIndex) {
+    [JXTAlertView showToastViewWithTitle:@"网页加载失败" message:@"" duration:1.25 dismissCompletion:^(NSInteger buttonIndex) {
         NSLog(@"关闭");
     }];
 }
@@ -215,14 +219,13 @@
     NSLog(@"webViewWebContentProcessDidTerminate");
 }
 
-
 #pragma mark - 设置左上角的一个返回按钮和一个关闭按钮
 /** 导航条的左边的 view */
 - (UIView *)csNavigationBarLeftView:(CSNavigationBar *)navigationBar
 {
-    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 90, 44)];
+    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
     
-    self.backBtn.origin = CGPointMake(10, 0);
+    self.backBtn.origin = CGPointMake(5, 0);
     
     self.closeBtn.cs_x = leftView.width - self.closeBtn.width;
     
@@ -232,6 +235,7 @@
     
     return leftView;
 }
+
 - (void)leftButtonEvent:(UIButton *)sender navigationBar:(CSNavigationBar *)navigationBar
 {
     [self backBtnClick:sender webView:self.webView];

@@ -28,7 +28,6 @@ const int cellHeight = 60;
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     //cell分割线向左移动15像素
-    
     if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)])
     {
         [self.tableView setSeparatorInset:UIEdgeInsetsZero];
@@ -61,11 +60,6 @@ const int cellHeight = 60;
     self.tableView.dataSource = _arrayDataSource;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -77,17 +71,57 @@ const int cellHeight = 60;
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CSMainDataModel *model = [_dataArray objectAtIndex:indexPath.row];
+    NSString *className = model.className;
     
-    UIViewController *vc = [[NSClassFromString(model.className) alloc] init];
-    vc.title = model.title;
-    if (vc)
-    {
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-        return;
+    // 注意: 如果是sb来搭建, 必须以 _UIStoryboard 结尾
+    NSUInteger classNameLength = className.length;
+    NSUInteger storyBoardLength = @"_UIStoryboard".length;
+    NSUInteger xibLength = @"_xib".length;
+    
+    NSString *suffixClassName;
+    if (classNameLength > storyBoardLength) {
+        suffixClassName = [className substringFromIndex:classNameLength - storyBoardLength];
     }
+    
+    if ([suffixClassName isEqualToString:@"_UIStoryboard"]) {
+        
+        className = [className substringToIndex:classNameLength - storyBoardLength];
+        
+        if ([className isEqualToString:@""]) {
+            
+        }else {
+            // 注意: 这个storyboard的名字必须是控制器的名字
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:className bundle:nil];
+            UIViewController *cardVC = [storyBoard instantiateInitialViewController];
+            if (!cardVC) {
+                cardVC = [storyBoard instantiateViewControllerWithIdentifier:className];
+            }
+            cardVC.title = model.title;
+            [self.navigationController pushViewController:cardVC animated:YES ];
+        }
+        
+    }else if ([[className substringFromIndex:classNameLength - xibLength] isEqualToString:@"_xib"]) {
+        
+        className = [className substringToIndex:classNameLength - xibLength];
+        
+        UIViewController *vc = [[NSClassFromString(className) alloc]initWithNibName:className bundle:nil];
+        vc.title = model.title;
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else {
+        NSLog(@"className = %@", className);
+        UIViewController *vc = [[NSClassFromString(className) alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        vc.title = model.title;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 #pragma mark - Table view data source
 /*

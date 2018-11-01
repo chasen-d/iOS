@@ -11,7 +11,7 @@
 @implementation UIBarButtonItem (SXCreate)
 
 +(UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(UIImage *)image {
-    return [self itemWithTarget:target action:action nomalImage:image higeLightedImage:nil imageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -10)];
+    return [self itemWithTarget:target action:action nomalImage:image higeLightedImage:nil imageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -15)];
 }
 
 +(UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(UIImage *)image imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets {

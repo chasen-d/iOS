@@ -21,7 +21,8 @@
     self.dataSoureArray = @[ @{@"title":@"自定义各种弹框",@"className":@"CSAlertViewController"},
                              @{@"title":@"指纹解锁",@"className":@"CSTouchIDViewController"},
                              @{@"title":@"自定义弹出视图",@"className":@"CSCustomAlertViewController"},
-                             
+                             @{@"title":@"button按钮",@"className":@"CSButtonTableViewController"},
+                             @{@"title":@"Label标签",@"className":@"YFLabelViewController"},
                              ];
     
 }

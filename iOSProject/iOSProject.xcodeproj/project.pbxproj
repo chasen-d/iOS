@@ -27,6 +27,55 @@
 		4004316C21609F0B0011CD91 /* TDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004316B21609F0B0011CD91 /* TDTouchID.m */; };
 		400431702160A8B30011CD91 /* CSCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004316F2160A8B30011CD91 /* CSCustomAlertViewController.m */; };
 		400431742160AAE80011CD91 /* CSmessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 400431732160AAE80011CD91 /* CSmessageView.m */; };
+		402337EC2175D5A9005A088F /* UIImage+CSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 402337EB2175D5A9005A088F /* UIImage+CSCategory.m */; };
+		402337EF2175D678005A088F /* UIImageView+CSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 402337EE2175D678005A088F /* UIImageView+CSCategory.m */; };
+		402337F32175D9E4005A088F /* CSCircleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402337F22175D9E4005A088F /* CSCircleImageViewController.m */; };
+		404877B0218ADC4200507C64 /* CSButtonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877AF218ADC4200507C64 /* CSButtonTableViewController.m */; };
+		404877B6218ADD3400507C64 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877B4218ADD3300507C64 /* UIButton+touch.m */; };
+		404877B7218ADD3400507C64 /* YFMultipleClicksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877B5218ADD3300507C64 /* YFMultipleClicksViewController.m */; };
+		404877BD218ADD3D00507C64 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877BA218ADD3D00507C64 /* DWBubbleMenuButton.m */; };
+		404877BE218ADD3D00507C64 /* YFBubbleMenuButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877BC218ADD3D00507C64 /* YFBubbleMenuButtonViewController.m */; };
+		404877C8218ADD4800507C64 /* logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 404877C3218ADD4800507C64 /* logo_@2x.png */; };
+		404877C9218ADD4800507C64 /* button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 404877C4218ADD4800507C64 /* button_bg@2x.png */; };
+		404877CA218ADD4800507C64 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877C5218ADD4800507C64 /* MMMaterialDesignSpinner.m */; };
+		404877CB218ADD4800507C64 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877C6218ADD4800507C64 /* DeformationButton.m */; };
+		404877CC218ADD4800507C64 /* YFAnimationCircleButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877C7218ADD4800507C64 /* YFAnimationCircleButtonVC.m */; };
+		404877D3218ADEFB00507C64 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877D0218ADEFB00507C64 /* APRoundedButton.m */; };
+		404877D4218ADEFB00507C64 /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877D1218ADEFB00507C64 /* YFAllRoundButtonVC.m */; };
+		4048782C218AEB9600507C64 /* WWTagsCloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877D9218AEB9600507C64 /* WWTagsCloudView.m */; };
+		4048782D218AEB9600507C64 /* YFTagsCloudViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404877DB218AEB9600507C64 /* YFTagsCloudViewController.storyboard */; };
+		4048782E218AEB9600507C64 /* YFTagsCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877DD218AEB9600507C64 /* YFTagsCloudViewController.m */; };
+		4048782F218AEB9600507C64 /* YFLazyInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877DF218AEB9600507C64 /* YFLazyInViewController.m */; };
+		40487830218AEB9600507C64 /* LazyFadeInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877E1218AEB9600507C64 /* LazyFadeInView.m */; };
+		40487831218AEB9600507C64 /* LazyFadeInLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877E3218AEB9600507C64 /* LazyFadeInLayer.m */; };
+		40487832218AEB9600507C64 /* YFLazyInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404877E6218AEB9600507C64 /* YFLazyInViewController.storyboard */; };
+		40487833218AEB9600507C64 /* gift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 404877ED218AEB9600507C64 /* gift@2x.png */; };
+		40487834218AEB9600507C64 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877EE218AEB9600507C64 /* UIImage+Extend.m */; };
+		40487835218AEB9600507C64 /* YFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877EF218AEB9600507C64 /* YFCycleView.m */; };
+		40487836218AEB9600507C64 /* GZView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877F0218AEB9600507C64 /* GZView.m */; };
+		40487837218AEB9600507C64 /* YFMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877F1218AEB9600507C64 /* YFMarqueeViewController.m */; };
+		40487838218AEB9600507C64 /* YFSphereTagCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877F3218AEB9600507C64 /* YFSphereTagCloud.m */; };
+		40487839218AEB9600507C64 /* DBSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877F9218AEB9600507C64 /* DBSphereView.m */; };
+		4048783A218AEB9600507C64 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877FC218AEB9600507C64 /* SKTag.m */; };
+		4048783B218AEB9600507C64 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404877FE218AEB9600507C64 /* SKTagView.m */; };
+		4048783C218AEB9600507C64 /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487801218AEB9600507C64 /* SKTagButton.m */; };
+		4048783D218AEB9600507C64 /* YFAutolayoutTagViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40487803218AEB9600507C64 /* YFAutolayoutTagViewController.storyboard */; };
+		4048783E218AEB9600507C64 /* YFAutolayoutTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487804218AEB9600507C64 /* YFAutolayoutTagViewController.m */; };
+		4048783F218AEB9600507C64 /* YFLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487805218AEB9600507C64 /* YFLabelViewController.m */; };
+		40487840218AEB9600507C64 /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487807218AEB9600507C64 /* RQShineLabel.m */; };
+		40487841218AEB9600507C64 /* YFShineLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487808218AEB9600507C64 /* YFShineLabelViewController.m */; };
+		40487842218AEB9600507C64 /* typewriter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4048780C218AEB9600507C64 /* typewriter.wav */; };
+		40487843218AEB9600507C64 /* ZTypewriteEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4048780F218AEB9600507C64 /* ZTypewriteEffectLabel.m */; };
+		40487844218AEB9600507C64 /* YFPrinterEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487810218AEB9600507C64 /* YFPrinterEffectViewController.m */; };
+		40487845218AEB9600507C64 /* YFSphereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487813218AEB9600507C64 /* YFSphereViewController.m */; };
+		40487846218AEB9600507C64 /* ZYQSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487816218AEB9600507C64 /* ZYQSphereView.m */; };
+		40487847218AEB9600507C64 /* PFGoldenSectionSpiral.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487818218AEB9600507C64 /* PFGoldenSectionSpiral.m */; };
+		40487848218AEB9700507C64 /* YFStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487820218AEB9600507C64 /* YFStar.m */; };
+		40487849218AEB9700507C64 /* YFRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487821218AEB9600507C64 /* YFRatingBarViewController.m */; };
+		4048784A218AEB9700507C64 /* YFRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487823218AEB9600507C64 /* YFRatingBar.m */; };
+		4048784B218AEB9700507C64 /* CloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487826218AEB9600507C64 /* CloudView.m */; };
+		4048784C218AEB9700507C64 /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40487827218AEB9600507C64 /* NSObject+KVC.m */; };
+		4048784D218AEB9700507C64 /* YFDynamicLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4048782A218AEB9600507C64 /* YFDynamicLabelViewController.m */; };
 		40AAC0AD212D3ED1009968C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AAC0AC212D3ED1009968C2 /* AppDelegate.m */; };
 		40AAC0B5212D3ED2009968C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AAC0B4212D3ED2009968C2 /* Assets.xcassets */; };
 		40AAC0BB212D3ED2009968C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AAC0BA212D3ED2009968C2 /* main.m */; };
@@ -130,6 +179,105 @@
 		4004316F2160A8B30011CD91 /* CSCustomAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCustomAlertViewController.m; sourceTree = "<group>"; };
 		400431722160AAE80011CD91 /* CSmessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSmessageView.h; sourceTree = "<group>"; };
 		400431732160AAE80011CD91 /* CSmessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSmessageView.m; sourceTree = "<group>"; };
+		402337EA2175D5A9005A088F /* UIImage+CSCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CSCategory.h"; sourceTree = "<group>"; };
+		402337EB2175D5A9005A088F /* UIImage+CSCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CSCategory.m"; sourceTree = "<group>"; };
+		402337ED2175D678005A088F /* UIImageView+CSCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CSCategory.h"; sourceTree = "<group>"; };
+		402337EE2175D678005A088F /* UIImageView+CSCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CSCategory.m"; sourceTree = "<group>"; };
+		402337F12175D9E4005A088F /* CSCircleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCircleImageViewController.h; sourceTree = "<group>"; };
+		402337F22175D9E4005A088F /* CSCircleImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCircleImageViewController.m; sourceTree = "<group>"; };
+		404877AE218ADC4200507C64 /* CSButtonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSButtonTableViewController.h; sourceTree = "<group>"; };
+		404877AF218ADC4200507C64 /* CSButtonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSButtonTableViewController.m; sourceTree = "<group>"; };
+		404877B2218ADD3300507C64 /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
+		404877B3218ADD3300507C64 /* YFMultipleClicksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMultipleClicksViewController.h; sourceTree = "<group>"; };
+		404877B4218ADD3300507C64 /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
+		404877B5218ADD3300507C64 /* YFMultipleClicksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMultipleClicksViewController.m; sourceTree = "<group>"; };
+		404877B9218ADD3D00507C64 /* YFBubbleMenuButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBubbleMenuButtonViewController.h; sourceTree = "<group>"; };
+		404877BA218ADD3D00507C64 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		404877BB218ADD3D00507C64 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		404877BC218ADD3D00507C64 /* YFBubbleMenuButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBubbleMenuButtonViewController.m; sourceTree = "<group>"; };
+		404877C0218ADD4800507C64 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		404877C1218ADD4800507C64 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		404877C2218ADD4800507C64 /* YFAnimationCircleButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAnimationCircleButtonVC.h; sourceTree = "<group>"; };
+		404877C3218ADD4800507C64 /* logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_@2x.png"; sourceTree = "<group>"; };
+		404877C4218ADD4800507C64 /* button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg@2x.png"; sourceTree = "<group>"; };
+		404877C5218ADD4800507C64 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		404877C6218ADD4800507C64 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		404877C7218ADD4800507C64 /* YFAnimationCircleButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAnimationCircleButtonVC.m; sourceTree = "<group>"; };
+		404877CE218ADEFB00507C64 /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
+		404877CF218ADEFB00507C64 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
+		404877D0218ADEFB00507C64 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
+		404877D1218ADEFB00507C64 /* YFAllRoundButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAllRoundButtonVC.m; sourceTree = "<group>"; };
+		404877D7218AEB9600507C64 /* YFLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLabelViewController.h; sourceTree = "<group>"; };
+		404877D9218AEB9600507C64 /* WWTagsCloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTagsCloudView.m; sourceTree = "<group>"; };
+		404877DA218AEB9600507C64 /* YFTagsCloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTagsCloudViewController.h; sourceTree = "<group>"; };
+		404877DB218AEB9600507C64 /* YFTagsCloudViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFTagsCloudViewController.storyboard; sourceTree = "<group>"; };
+		404877DC218AEB9600507C64 /* WWTagsCloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTagsCloudView.h; sourceTree = "<group>"; };
+		404877DD218AEB9600507C64 /* YFTagsCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTagsCloudViewController.m; sourceTree = "<group>"; };
+		404877DF218AEB9600507C64 /* YFLazyInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLazyInViewController.m; sourceTree = "<group>"; };
+		404877E1218AEB9600507C64 /* LazyFadeInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyFadeInView.m; sourceTree = "<group>"; };
+		404877E2218AEB9600507C64 /* LazyFadeInLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyFadeInLayer.h; sourceTree = "<group>"; };
+		404877E3218AEB9600507C64 /* LazyFadeInLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyFadeInLayer.m; sourceTree = "<group>"; };
+		404877E4218AEB9600507C64 /* LazyFadeInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyFadeInView.h; sourceTree = "<group>"; };
+		404877E5218AEB9600507C64 /* LazyFadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyFadeIn.h; sourceTree = "<group>"; };
+		404877E6218AEB9600507C64 /* YFLazyInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFLazyInViewController.storyboard; sourceTree = "<group>"; };
+		404877E7218AEB9600507C64 /* YFLazyInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLazyInViewController.h; sourceTree = "<group>"; };
+		404877E9218AEB9600507C64 /* YFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCycleView.h; sourceTree = "<group>"; };
+		404877EA218AEB9600507C64 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		404877EB218AEB9600507C64 /* YFMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMarqueeViewController.h; sourceTree = "<group>"; };
+		404877EC218AEB9600507C64 /* GZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZView.h; sourceTree = "<group>"; };
+		404877ED218AEB9600507C64 /* gift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift@2x.png"; sourceTree = "<group>"; };
+		404877EE218AEB9600507C64 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		404877EF218AEB9600507C64 /* YFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCycleView.m; sourceTree = "<group>"; };
+		404877F0218AEB9600507C64 /* GZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZView.m; sourceTree = "<group>"; };
+		404877F1218AEB9600507C64 /* YFMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMarqueeViewController.m; sourceTree = "<group>"; };
+		404877F3218AEB9600507C64 /* YFSphereTagCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSphereTagCloud.m; sourceTree = "<group>"; };
+		404877F4218AEB9600507C64 /* YFSphereTagCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSphereTagCloud.h; sourceTree = "<group>"; };
+		404877F6218AEB9600507C64 /* DBPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPoint.h; sourceTree = "<group>"; };
+		404877F7218AEB9600507C64 /* DBSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSphereView.h; sourceTree = "<group>"; };
+		404877F8218AEB9600507C64 /* DBMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMatrix.h; sourceTree = "<group>"; };
+		404877F9218AEB9600507C64 /* DBSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSphereView.m; sourceTree = "<group>"; };
+		404877FC218AEB9600507C64 /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
+		404877FD218AEB9600507C64 /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
+		404877FE218AEB9600507C64 /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
+		404877FF218AEB9600507C64 /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
+		40487800218AEB9600507C64 /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
+		40487801218AEB9600507C64 /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
+		40487802218AEB9600507C64 /* YFAutolayoutTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAutolayoutTagViewController.h; sourceTree = "<group>"; };
+		40487803218AEB9600507C64 /* YFAutolayoutTagViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFAutolayoutTagViewController.storyboard; sourceTree = "<group>"; };
+		40487804218AEB9600507C64 /* YFAutolayoutTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAutolayoutTagViewController.m; sourceTree = "<group>"; };
+		40487805218AEB9600507C64 /* YFLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLabelViewController.m; sourceTree = "<group>"; };
+		40487807218AEB9600507C64 /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabel.m; sourceTree = "<group>"; };
+		40487808218AEB9600507C64 /* YFShineLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFShineLabelViewController.m; sourceTree = "<group>"; };
+		40487809218AEB9600507C64 /* YFShineLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFShineLabelViewController.h; sourceTree = "<group>"; };
+		4048780A218AEB9600507C64 /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabel.h; sourceTree = "<group>"; };
+		4048780C218AEB9600507C64 /* typewriter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = typewriter.wav; sourceTree = "<group>"; };
+		4048780D218AEB9600507C64 /* ZTypewriteEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTypewriteEffectLabel.h; sourceTree = "<group>"; };
+		4048780E218AEB9600507C64 /* YFPrinterEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPrinterEffectViewController.h; sourceTree = "<group>"; };
+		4048780F218AEB9600507C64 /* ZTypewriteEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTypewriteEffectLabel.m; sourceTree = "<group>"; };
+		40487810218AEB9600507C64 /* YFPrinterEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPrinterEffectViewController.m; sourceTree = "<group>"; };
+		40487812218AEB9600507C64 /* YFSphereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSphereViewController.h; sourceTree = "<group>"; };
+		40487813218AEB9600507C64 /* YFSphereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSphereViewController.m; sourceTree = "<group>"; };
+		40487815218AEB9600507C64 /* PFPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPoint.h; sourceTree = "<group>"; };
+		40487816218AEB9600507C64 /* ZYQSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQSphereView.m; sourceTree = "<group>"; };
+		40487817218AEB9600507C64 /* PFAxisDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAxisDirection.h; sourceTree = "<group>"; };
+		40487818218AEB9600507C64 /* PFGoldenSectionSpiral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGoldenSectionSpiral.m; sourceTree = "<group>"; };
+		40487819218AEB9600507C64 /* PFRadian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRadian.h; sourceTree = "<group>"; };
+		4048781A218AEB9600507C64 /* PFMatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMatrixTransform.h; sourceTree = "<group>"; };
+		4048781B218AEB9600507C64 /* PFMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMatrix.h; sourceTree = "<group>"; };
+		4048781C218AEB9600507C64 /* ZYQSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQSphereView.h; sourceTree = "<group>"; };
+		4048781D218AEB9600507C64 /* PFGoldenSectionSpiral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGoldenSectionSpiral.h; sourceTree = "<group>"; };
+		4048781F218AEB9600507C64 /* YFRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRatingBar.h; sourceTree = "<group>"; };
+		40487820218AEB9600507C64 /* YFStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFStar.m; sourceTree = "<group>"; };
+		40487821218AEB9600507C64 /* YFRatingBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRatingBarViewController.m; sourceTree = "<group>"; };
+		40487822218AEB9600507C64 /* YFStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFStar.h; sourceTree = "<group>"; };
+		40487823218AEB9600507C64 /* YFRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRatingBar.m; sourceTree = "<group>"; };
+		40487824218AEB9600507C64 /* YFRatingBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRatingBarViewController.h; sourceTree = "<group>"; };
+		40487826218AEB9600507C64 /* CloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudView.m; sourceTree = "<group>"; };
+		40487827218AEB9600507C64 /* NSObject+KVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVC.m"; sourceTree = "<group>"; };
+		40487828218AEB9600507C64 /* YFDynamicLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDynamicLabelViewController.h; sourceTree = "<group>"; };
+		40487829218AEB9600507C64 /* CloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudView.h; sourceTree = "<group>"; };
+		4048782A218AEB9600507C64 /* YFDynamicLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDynamicLabelViewController.m; sourceTree = "<group>"; };
+		4048782B218AEB9600507C64 /* NSObject+KVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVC.h"; sourceTree = "<group>"; };
 		40AAC0A8212D3ED1009968C2 /* iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AAC0AB212D3ED1009968C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40AAC0AC212D3ED1009968C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -261,6 +409,9 @@
 		40043139215E0EF00011CD91 /* BasicKnowledge(基础知识) */ = {
 			isa = PBXGroup;
 			children = (
+				404877D6218AEB9600507C64 /* Label(标签) */,
+				404877AD218ADBEA00507C64 /* Button按钮 */,
+				402337F02175D76B005A088F /* 图片圆角 */,
 				4004316621609C5D0011CD91 /* 指纹解锁 */,
 				4004313D215F26F60011CD91 /* AlertView */,
 				4004313A215E0F6B0011CD91 /* CSBasicKnowledgeController.h */,
@@ -285,8 +436,8 @@
 		40043141215F29E30011CD91 /* JXTAlertManager */ = {
 			isa = PBXGroup;
 			children = (
-				40043142215F29E30011CD91 /* AlertController */,
 				40043145215F29E30011CD91 /* JXTAlertManagerHeader.h */,
+				40043142215F29E30011CD91 /* AlertController */,
 				40043146215F29E30011CD91 /* AlertView */,
 			);
 			path = JXTAlertManager;
@@ -338,16 +489,16 @@
 			children = (
 				400431632160753A0011CD91 /* UIBarButtonItem+SXCreate.h */,
 				400431642160753A0011CD91 /* UIBarButtonItem+SXCreate.m */,
+				400431592160750C0011CD91 /* UINavigationBar+SXFixSpace.h */,
 				400431542160750C0011CD91 /* UINavigationBar+SXFixSpace.m */,
+				4004315B2160750C0011CD91 /* UINavigationItem+SXFixSpace.h */,
 				400431552160750C0011CD91 /* UINavigationItem+SXFixSpace.m */,
 				400431562160750C0011CD91 /* UINavigationController+SXFixSpace.h */,
-				400431572160750C0011CD91 /* NSObject+SXRuntime.h */,
-				400431582160750C0011CD91 /* UINavigationConfig.m */,
-				400431592160750C0011CD91 /* UINavigationBar+SXFixSpace.h */,
 				4004315A2160750C0011CD91 /* UINavigationController+SXFixSpace.m */,
-				4004315B2160750C0011CD91 /* UINavigationItem+SXFixSpace.h */,
-				4004315C2160750C0011CD91 /* UINavigationConfig.h */,
+				400431572160750C0011CD91 /* NSObject+SXRuntime.h */,
 				4004315D2160750C0011CD91 /* NSObject+SXRuntime.m */,
+				4004315C2160750C0011CD91 /* UINavigationConfig.h */,
+				400431582160750C0011CD91 /* UINavigationConfig.m */,
 			);
 			path = "UINavigation-SXFixSpace";
 			sourceTree = "<group>";
@@ -376,6 +527,275 @@
 				400431732160AAE80011CD91 /* CSmessageView.m */,
 			);
 			path = "仿QQ提示";
+			sourceTree = "<group>";
+		};
+		402337E92175D565005A088F /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				402337ED2175D678005A088F /* UIImageView+CSCategory.h */,
+				402337EE2175D678005A088F /* UIImageView+CSCategory.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		402337F02175D76B005A088F /* 图片圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				402337F12175D9E4005A088F /* CSCircleImageViewController.h */,
+				402337F22175D9E4005A088F /* CSCircleImageViewController.m */,
+			);
+			path = "图片圆角";
+			sourceTree = "<group>";
+		};
+		404877AD218ADBEA00507C64 /* Button按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				404877CD218ADEFB00507C64 /* AllRoundButton */,
+				404877BF218ADD4800507C64 /* AnimationCircleButton */,
+				404877B8218ADD3D00507C64 /* BubbleMenuButton */,
+				404877B1218ADD3300507C64 /* MultipleClicks */,
+				404877AE218ADC4200507C64 /* CSButtonTableViewController.h */,
+				404877AF218ADC4200507C64 /* CSButtonTableViewController.m */,
+			);
+			path = "Button按钮";
+			sourceTree = "<group>";
+		};
+		404877B1218ADD3300507C64 /* MultipleClicks */ = {
+			isa = PBXGroup;
+			children = (
+				404877B2218ADD3300507C64 /* UIButton+touch.h */,
+				404877B3218ADD3300507C64 /* YFMultipleClicksViewController.h */,
+				404877B4218ADD3300507C64 /* UIButton+touch.m */,
+				404877B5218ADD3300507C64 /* YFMultipleClicksViewController.m */,
+			);
+			path = MultipleClicks;
+			sourceTree = "<group>";
+		};
+		404877B8218ADD3D00507C64 /* BubbleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				404877B9218ADD3D00507C64 /* YFBubbleMenuButtonViewController.h */,
+				404877BC218ADD3D00507C64 /* YFBubbleMenuButtonViewController.m */,
+				404877BA218ADD3D00507C64 /* DWBubbleMenuButton.m */,
+				404877BB218ADD3D00507C64 /* DWBubbleMenuButton.h */,
+			);
+			path = BubbleMenuButton;
+			sourceTree = "<group>";
+		};
+		404877BF218ADD4800507C64 /* AnimationCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				404877C0218ADD4800507C64 /* DeformationButton.h */,
+				404877C1218ADD4800507C64 /* MMMaterialDesignSpinner.h */,
+				404877C2218ADD4800507C64 /* YFAnimationCircleButtonVC.h */,
+				404877C7218ADD4800507C64 /* YFAnimationCircleButtonVC.m */,
+				404877C3218ADD4800507C64 /* logo_@2x.png */,
+				404877C4218ADD4800507C64 /* button_bg@2x.png */,
+				404877C5218ADD4800507C64 /* MMMaterialDesignSpinner.m */,
+				404877C6218ADD4800507C64 /* DeformationButton.m */,
+			);
+			path = AnimationCircleButton;
+			sourceTree = "<group>";
+		};
+		404877CD218ADEFB00507C64 /* AllRoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				404877CE218ADEFB00507C64 /* YFAllRoundButtonVC.h */,
+				404877D1218ADEFB00507C64 /* YFAllRoundButtonVC.m */,
+				404877CF218ADEFB00507C64 /* APRoundedButton.h */,
+				404877D0218ADEFB00507C64 /* APRoundedButton.m */,
+			);
+			path = AllRoundButton;
+			sourceTree = "<group>";
+		};
+		404877D6218AEB9600507C64 /* Label(标签) */ = {
+			isa = PBXGroup;
+			children = (
+				404877D7218AEB9600507C64 /* YFLabelViewController.h */,
+				40487805218AEB9600507C64 /* YFLabelViewController.m */,
+				404877D8218AEB9600507C64 /* TagsCloudView */,
+				404877DE218AEB9600507C64 /* LazyFadeInView */,
+				404877E8218AEB9600507C64 /* Marquee */,
+				404877F2218AEB9600507C64 /* SphereTagCloud */,
+				404877FA218AEB9600507C64 /* AutolayoutTagView */,
+				40487806218AEB9600507C64 /* ShineLabel */,
+				4048780B218AEB9600507C64 /* PrinterEffect */,
+				40487811218AEB9600507C64 /* SphereView */,
+				4048781E218AEB9600507C64 /* RatingBar */,
+				40487825218AEB9600507C64 /* DynamicLabel */,
+			);
+			path = "Label(标签)";
+			sourceTree = "<group>";
+		};
+		404877D8218AEB9600507C64 /* TagsCloudView */ = {
+			isa = PBXGroup;
+			children = (
+				404877D9218AEB9600507C64 /* WWTagsCloudView.m */,
+				404877DA218AEB9600507C64 /* YFTagsCloudViewController.h */,
+				404877DB218AEB9600507C64 /* YFTagsCloudViewController.storyboard */,
+				404877DC218AEB9600507C64 /* WWTagsCloudView.h */,
+				404877DD218AEB9600507C64 /* YFTagsCloudViewController.m */,
+			);
+			path = TagsCloudView;
+			sourceTree = "<group>";
+		};
+		404877DE218AEB9600507C64 /* LazyFadeInView */ = {
+			isa = PBXGroup;
+			children = (
+				404877DF218AEB9600507C64 /* YFLazyInViewController.m */,
+				404877E0218AEB9600507C64 /* LazyFadeInView */,
+				404877E6218AEB9600507C64 /* YFLazyInViewController.storyboard */,
+				404877E7218AEB9600507C64 /* YFLazyInViewController.h */,
+			);
+			path = LazyFadeInView;
+			sourceTree = "<group>";
+		};
+		404877E0218AEB9600507C64 /* LazyFadeInView */ = {
+			isa = PBXGroup;
+			children = (
+				404877E1218AEB9600507C64 /* LazyFadeInView.m */,
+				404877E2218AEB9600507C64 /* LazyFadeInLayer.h */,
+				404877E3218AEB9600507C64 /* LazyFadeInLayer.m */,
+				404877E4218AEB9600507C64 /* LazyFadeInView.h */,
+				404877E5218AEB9600507C64 /* LazyFadeIn.h */,
+			);
+			path = LazyFadeInView;
+			sourceTree = "<group>";
+		};
+		404877E8218AEB9600507C64 /* Marquee */ = {
+			isa = PBXGroup;
+			children = (
+				404877E9218AEB9600507C64 /* YFCycleView.h */,
+				404877EF218AEB9600507C64 /* YFCycleView.m */,
+				404877EA218AEB9600507C64 /* UIImage+Extend.h */,
+				404877EE218AEB9600507C64 /* UIImage+Extend.m */,
+				404877EB218AEB9600507C64 /* YFMarqueeViewController.h */,
+				404877F1218AEB9600507C64 /* YFMarqueeViewController.m */,
+				404877ED218AEB9600507C64 /* gift@2x.png */,
+				404877EC218AEB9600507C64 /* GZView.h */,
+				404877F0218AEB9600507C64 /* GZView.m */,
+			);
+			path = Marquee;
+			sourceTree = "<group>";
+		};
+		404877F2218AEB9600507C64 /* SphereTagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				404877F3218AEB9600507C64 /* YFSphereTagCloud.m */,
+				404877F4218AEB9600507C64 /* YFSphereTagCloud.h */,
+				404877F5218AEB9600507C64 /* DBSphereTagCloud */,
+			);
+			path = SphereTagCloud;
+			sourceTree = "<group>";
+		};
+		404877F5218AEB9600507C64 /* DBSphereTagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				404877F8218AEB9600507C64 /* DBMatrix.h */,
+				404877F6218AEB9600507C64 /* DBPoint.h */,
+				404877F7218AEB9600507C64 /* DBSphereView.h */,
+				404877F9218AEB9600507C64 /* DBSphereView.m */,
+			);
+			path = DBSphereTagCloud;
+			sourceTree = "<group>";
+		};
+		404877FA218AEB9600507C64 /* AutolayoutTagView */ = {
+			isa = PBXGroup;
+			children = (
+				404877FB218AEB9600507C64 /* SKTagView */,
+				40487802218AEB9600507C64 /* YFAutolayoutTagViewController.h */,
+				40487803218AEB9600507C64 /* YFAutolayoutTagViewController.storyboard */,
+				40487804218AEB9600507C64 /* YFAutolayoutTagViewController.m */,
+			);
+			path = AutolayoutTagView;
+			sourceTree = "<group>";
+		};
+		404877FB218AEB9600507C64 /* SKTagView */ = {
+			isa = PBXGroup;
+			children = (
+				404877FC218AEB9600507C64 /* SKTag.m */,
+				404877FD218AEB9600507C64 /* SKTagButton.h */,
+				404877FE218AEB9600507C64 /* SKTagView.m */,
+				404877FF218AEB9600507C64 /* SKTag.h */,
+				40487800218AEB9600507C64 /* SKTagView.h */,
+				40487801218AEB9600507C64 /* SKTagButton.m */,
+			);
+			path = SKTagView;
+			sourceTree = "<group>";
+		};
+		40487806218AEB9600507C64 /* ShineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				40487807218AEB9600507C64 /* RQShineLabel.m */,
+				40487808218AEB9600507C64 /* YFShineLabelViewController.m */,
+				40487809218AEB9600507C64 /* YFShineLabelViewController.h */,
+				4048780A218AEB9600507C64 /* RQShineLabel.h */,
+			);
+			path = ShineLabel;
+			sourceTree = "<group>";
+		};
+		4048780B218AEB9600507C64 /* PrinterEffect */ = {
+			isa = PBXGroup;
+			children = (
+				4048780C218AEB9600507C64 /* typewriter.wav */,
+				4048780D218AEB9600507C64 /* ZTypewriteEffectLabel.h */,
+				4048780E218AEB9600507C64 /* YFPrinterEffectViewController.h */,
+				4048780F218AEB9600507C64 /* ZTypewriteEffectLabel.m */,
+				40487810218AEB9600507C64 /* YFPrinterEffectViewController.m */,
+			);
+			path = PrinterEffect;
+			sourceTree = "<group>";
+		};
+		40487811218AEB9600507C64 /* SphereView */ = {
+			isa = PBXGroup;
+			children = (
+				40487812218AEB9600507C64 /* YFSphereViewController.h */,
+				40487813218AEB9600507C64 /* YFSphereViewController.m */,
+				40487814218AEB9600507C64 /* SphereView */,
+			);
+			path = SphereView;
+			sourceTree = "<group>";
+		};
+		40487814218AEB9600507C64 /* SphereView */ = {
+			isa = PBXGroup;
+			children = (
+				40487815218AEB9600507C64 /* PFPoint.h */,
+				40487816218AEB9600507C64 /* ZYQSphereView.m */,
+				40487817218AEB9600507C64 /* PFAxisDirection.h */,
+				40487818218AEB9600507C64 /* PFGoldenSectionSpiral.m */,
+				40487819218AEB9600507C64 /* PFRadian.h */,
+				4048781A218AEB9600507C64 /* PFMatrixTransform.h */,
+				4048781B218AEB9600507C64 /* PFMatrix.h */,
+				4048781C218AEB9600507C64 /* ZYQSphereView.h */,
+				4048781D218AEB9600507C64 /* PFGoldenSectionSpiral.h */,
+			);
+			path = SphereView;
+			sourceTree = "<group>";
+		};
+		4048781E218AEB9600507C64 /* RatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				4048781F218AEB9600507C64 /* YFRatingBar.h */,
+				40487820218AEB9600507C64 /* YFStar.m */,
+				40487824218AEB9600507C64 /* YFRatingBarViewController.h */,
+				40487821218AEB9600507C64 /* YFRatingBarViewController.m */,
+				40487822218AEB9600507C64 /* YFStar.h */,
+				40487823218AEB9600507C64 /* YFRatingBar.m */,
+			);
+			path = RatingBar;
+			sourceTree = "<group>";
+		};
+		40487825218AEB9600507C64 /* DynamicLabel */ = {
+			isa = PBXGroup;
+			children = (
+				40487826218AEB9600507C64 /* CloudView.m */,
+				40487827218AEB9600507C64 /* NSObject+KVC.m */,
+				40487828218AEB9600507C64 /* YFDynamicLabelViewController.h */,
+				40487829218AEB9600507C64 /* CloudView.h */,
+				4048782A218AEB9600507C64 /* YFDynamicLabelViewController.m */,
+				4048782B218AEB9600507C64 /* NSObject+KVC.h */,
+			);
+			path = DynamicLabel;
 			sourceTree = "<group>";
 		};
 		40AAC09F212D3ED0009968C2 = {
@@ -460,6 +880,7 @@
 		40B532122147960E00D0FC20 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				402337E92175D565005A088F /* UIImageView */,
 				40B5322421479EF500D0FC20 /* NSAttributedString */,
 				40B5322321479EE700D0FC20 /* UIButton */,
 				40B5322221479EDF00D0FC20 /* UIView */,
@@ -541,6 +962,8 @@
 		40B5322121479ED600D0FC20 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				402337EA2175D5A9005A088F /* UIImage+CSCategory.h */,
+				402337EB2175D5A9005A088F /* UIImage+CSCategory.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -875,17 +1298,24 @@
 				40B53299214A50D600D0FC20 /* 晴29x29@3x.png in Resources */,
 				40B53298214A50D600D0FC20 /* 晴60x60@3x.png in Resources */,
 				40B53296214A50D600D0FC20 /* 天气60x60@3x.png in Resources */,
+				404877C8218ADD4800507C64 /* logo_@2x.png in Resources */,
 				40B53294214A50D600D0FC20 /* 晴29x29@2x.png in Resources */,
 				40AAC0B5212D3ED2009968C2 /* Assets.xcassets in Resources */,
 				40B5329B214A50D600D0FC20 /* 天气29x29@2x.png in Resources */,
+				40487842218AEB9600507C64 /* typewriter.wav in Resources */,
 				40B5329D214A50D600D0FC20 /* 天气20x20@3x.png in Resources */,
 				40B5329C214A50D600D0FC20 /* 晴40x40@2x.png in Resources */,
 				40B53297214A50D600D0FC20 /* 天气60x60@2x.png in Resources */,
 				40B53292214A50D600D0FC20 /* 天气29x29@3x.png in Resources */,
+				404877C9218ADD4800507C64 /* button_bg@2x.png in Resources */,
 				40B5329F214A50D600D0FC20 /* 晴20x20@3x.png in Resources */,
+				4048782D218AEB9600507C64 /* YFTagsCloudViewController.storyboard in Resources */,
 				40B53295214A50D600D0FC20 /* 晴60x60@2x.png in Resources */,
 				40B53291214A50D600D0FC20 /* 晴40x40@3x.png in Resources */,
+				40487833218AEB9600507C64 /* gift@2x.png in Resources */,
+				40487832218AEB9600507C64 /* YFLazyInViewController.storyboard in Resources */,
 				40B5329A214A50D600D0FC20 /* 天气40x40@3x.png in Resources */,
+				4048783D218AEB9600507C64 /* YFAutolayoutTagViewController.storyboard in Resources */,
 				40B5329E214A50D600D0FC20 /* 晴20x20@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -991,48 +1421,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B53260214A3BB000D0FC20 /* CSAnimationListTableViewController.m in Sources */,
+				40487839218AEB9600507C64 /* DBSphereView.m in Sources */,
+				40487849218AEB9700507C64 /* YFRatingBarViewController.m in Sources */,
 				40AAC0E2212D52EF009968C2 /* CSTabBarController.m in Sources */,
+				4048782E218AEB9600507C64 /* YFTagsCloudViewController.m in Sources */,
+				4048783A218AEB9600507C64 /* SKTag.m in Sources */,
 				40AAC0BB212D3ED2009968C2 /* main.m in Sources */,
+				404877B7218ADD3400507C64 /* YFMultipleClicksViewController.m in Sources */,
+				404877D3218ADEFB00507C64 /* APRoundedButton.m in Sources */,
+				4048782F218AEB9600507C64 /* YFLazyInViewController.m in Sources */,
 				400431602160750C0011CD91 /* UINavigationConfig.m in Sources */,
 				400431742160AAE80011CD91 /* CSmessageView.m in Sources */,
 				4004314E215F4ADB0011CD91 /* CSWebViewController.m in Sources */,
+				4048783E218AEB9600507C64 /* YFAutolayoutTagViewController.m in Sources */,
+				40487838218AEB9600507C64 /* YFSphereTagCloud.m in Sources */,
 				40B5326F214A408A00D0FC20 /* TableViewAnimationKit.m in Sources */,
 				40B5325B214A353D00D0FC20 /* CSUIFactory.m in Sources */,
 				400431652160753A0011CD91 /* UIBarButtonItem+SXCreate.m in Sources */,
 				40B532492147BD8A00D0FC20 /* YYFPSLabel.m in Sources */,
 				40B5322721479F4400D0FC20 /* UIColor+CSCategory.m in Sources */,
+				4048784C218AEB9700507C64 /* NSObject+KVC.m in Sources */,
 				40B5324F214A0C4B00D0FC20 /* CSBaseTableViewController.m in Sources */,
+				40487841218AEB9600507C64 /* YFShineLabelViewController.m in Sources */,
+				4048784D218AEB9700507C64 /* YFDynamicLabelViewController.m in Sources */,
 				40AAC0E8212E619A009968C2 /* CSBaseViewController.m in Sources */,
 				40B53253214A30BB00D0FC20 /* CSArrayDataSource.m in Sources */,
+				404877BD218ADD3D00507C64 /* DWBubbleMenuButton.m in Sources */,
+				402337F32175D9E4005A088F /* CSCircleImageViewController.m in Sources */,
+				40487844218AEB9600507C64 /* YFPrinterEffectViewController.m in Sources */,
+				4048782C218AEB9600507C64 /* WWTagsCloudView.m in Sources */,
+				4048783B218AEB9600507C64 /* SKTagView.m in Sources */,
 				40043137215DFEE80011CD91 /* AdvertiseView.m in Sources */,
+				404877CC218ADD4800507C64 /* YFAnimationCircleButtonVC.m in Sources */,
+				404877CA218ADD4800507C64 /* MMMaterialDesignSpinner.m in Sources */,
+				40487847218AEB9600507C64 /* PFGoldenSectionSpiral.m in Sources */,
 				4004313C215E0F6B0011CD91 /* CSBasicKnowledgeController.m in Sources */,
 				40B5327F214A4E8800D0FC20 /* CSChangeIconViewController.m in Sources */,
 				40AAC0E5212D5901009968C2 /* CSNavigationController.m in Sources */,
+				404877BE218ADD3D00507C64 /* YFBubbleMenuButtonViewController.m in Sources */,
 				40043140215F272E0011CD91 /* CSAlertViewController.m in Sources */,
+				402337EC2175D5A9005A088F /* UIImage+CSCategory.m in Sources */,
+				4048784A218AEB9700507C64 /* YFRatingBar.m in Sources */,
 				40B5327B214A4E0400D0FC20 /* CSNewFunctionViewController.m in Sources */,
+				4048784B218AEB9700507C64 /* CloudView.m in Sources */,
+				40487836218AEB9600507C64 /* GZView.m in Sources */,
 				40B532162147965F00D0FC20 /* UITableView+CSCellAnimation.m in Sources */,
 				4004314A215F29E30011CD91 /* JXTAlertView.m in Sources */,
 				4004315E2160750C0011CD91 /* UINavigationBar+SXFixSpace.m in Sources */,
 				40B5324C2147BDF700D0FC20 /* UIView+CSCategory.m in Sources */,
+				40487834218AEB9600507C64 /* UIImage+Extend.m in Sources */,
 				40B5322A2147A23900D0FC20 /* UIButton+CSCategory.m in Sources */,
 				400431622160750C0011CD91 /* NSObject+SXRuntime.m in Sources */,
+				40487830218AEB9600507C64 /* LazyFadeInView.m in Sources */,
+				404877CB218ADD4800507C64 /* DeformationButton.m in Sources */,
+				40487837218AEB9600507C64 /* YFMarqueeViewController.m in Sources */,
 				4004316921609C910011CD91 /* CSTouchIDViewController.m in Sources */,
 				40043149215F29E30011CD91 /* JXTAlertController.m in Sources */,
+				4048783C218AEB9600507C64 /* SKTagButton.m in Sources */,
+				40487835218AEB9600507C64 /* YFCycleView.m in Sources */,
 				400431612160750C0011CD91 /* UINavigationController+SXFixSpace.m in Sources */,
+				40487846218AEB9600507C64 /* ZYQSphereView.m in Sources */,
+				404877B0218ADC4200507C64 /* CSButtonTableViewController.m in Sources */,
+				40487831218AEB9600507C64 /* LazyFadeInLayer.m in Sources */,
 				400431702160A8B30011CD91 /* CSCustomAlertViewController.m in Sources */,
 				40B53264214A3CE900D0FC20 /* CSShowTableViewController.m in Sources */,
+				40487848218AEB9700507C64 /* YFStar.m in Sources */,
+				40487843218AEB9600507C64 /* ZTypewriteEffectLabel.m in Sources */,
 				4004316C21609F0B0011CD91 /* TDTouchID.m in Sources */,
+				404877B6218ADD3400507C64 /* UIButton+touch.m in Sources */,
 				40B53267214A3D8400D0FC20 /* CSTableViewAnimationlistController.m in Sources */,
+				402337EF2175D678005A088F /* UIImageView+CSCategory.m in Sources */,
 				40B532392147B78B00D0FC20 /* CSTwoViewController.m in Sources */,
 				40B53278214A4CFE00D0FC20 /* CSFunctionListViewController.m in Sources */,
 				40AAC0AD212D3ED1009968C2 /* AppDelegate.m in Sources */,
 				40B5321A214798A700D0FC20 /* UITextView+CSCategory.m in Sources */,
+				4048783F218AEB9600507C64 /* YFLabelViewController.m in Sources */,
 				40B532362147B77B00D0FC20 /* CSOneViewController.m in Sources */,
 				40043138215DFEE80011CD91 /* AdvertiseHelper.m in Sources */,
+				40487840218AEB9600507C64 /* RQShineLabel.m in Sources */,
 				40B53256214A322E00D0FC20 /* CSMainDataModel.m in Sources */,
+				404877D4218ADEFB00507C64 /* YFAllRoundButtonVC.m in Sources */,
 				4004315F2160750C0011CD91 /* UINavigationItem+SXFixSpace.m in Sources */,
 				40B53270214A408A00D0FC20 /* UITableView+XSAnimationKit.m in Sources */,
 				40043151215F57AA0011CD91 /* CSNavigationBar.m in Sources */,
+				40487845218AEB9600507C64 /* YFSphereViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,6 +1656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FW3BNPA85P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1206,6 +1679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FW3BNPA85P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

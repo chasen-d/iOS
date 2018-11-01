@@ -14,13 +14,14 @@ target 'iOSProject' do
   
   # 网络监控
   pod 'Reachability'
+  pod 'NetworkEye'
 
   #字典转模型
   pod 'MJExtension'
   # 下拉刷新
   pod 'MJRefresh'
   # 数据库
-  pod 'FMDB'
+  pod 'FMDB/SQLCipher'
   
   # 蒙版
   pod 'MBProgressHUD'
