@@ -49,7 +49,8 @@ static PFMatrix PFMatrixMakeFromArray(NSInteger m, NSInteger n, CGFloat *data) {
 	
 	return matrix;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFMatrix PFMatrixMakeIdentity(NSInteger m, NSInteger n) {
 	PFMatrix matrix = PFMatrixMake(m, n);
 	
@@ -59,6 +60,7 @@ static PFMatrix PFMatrixMakeIdentity(NSInteger m, NSInteger n) {
 	
 	return matrix;
 }
+#pragma clang diagnostic pop
 
 static PFMatrix PFMatrixMultiply(PFMatrix A, PFMatrix B) {
 	PFMatrix R = PFMatrixMake(A.m, B.n);
@@ -74,6 +76,8 @@ static PFMatrix PFMatrixMultiply(PFMatrix A, PFMatrix B) {
 	return R;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static NSString *NSStringFromPFMatrix(PFMatrix matrix) {
 	NSMutableString *str = [NSMutableString string];
 	
@@ -97,3 +101,4 @@ static NSString *NSStringFromPFMatrix(PFMatrix matrix) {
 	
 	return str;
 }
+#pragma clang diagnostic pop

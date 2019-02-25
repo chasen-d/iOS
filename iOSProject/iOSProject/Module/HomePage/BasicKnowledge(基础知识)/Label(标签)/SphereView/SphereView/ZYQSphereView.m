@@ -214,7 +214,7 @@
 	
 	if (rotation > LastSphereRotationAngle) {
 		rotationDirection = PFAxisDirectionPositive;
-	} else if (rotation < LastSphereRotationAngle) {
+    } else {
 		rotationDirection = PFAxisDirectionNegative;
 	}
 		

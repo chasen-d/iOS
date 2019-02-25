@@ -29,7 +29,6 @@
         _starTotalNumber = defaultStarCount;
         _starSelectNumber = _starTotalNumber;
 
-        
         self.enable = YES;
         self.scrollSelectEnable = YES;
         // bt_star_a bt_star_b
@@ -42,11 +41,9 @@
         // 默认星星个数:5
         [self makeStarWithCount:self.starTotalNumber];
 
-        
     }
     return self;
 }
-
 
 - (void)makeStarWithCount:(NSInteger)count {
     
@@ -64,17 +61,13 @@
         [self addSubview:star];
     }
  
- 
 }
-
 
 -(void)setViewColor:(UIColor *)backgroundColor{
     if(_viewColor!=backgroundColor){
         self.backgroundColor = backgroundColor;
-
     }
 }
-
 
 -(void)tap:(UITapGestureRecognizer *)gesture{
     if(self.enable){
@@ -85,6 +78,7 @@
 
     }
 }
+
 -(void)pan:(UIPanGestureRecognizer *)gesture{
     if(self.enable && self.scrollSelectEnable){
         CGPoint point = [gesture locationInView:self];
@@ -101,7 +95,6 @@
 - (void)setStarSelectNumber:(NSInteger)starSelectNumber {
 
     _starSelectNumber = starSelectNumber;
-    
     // 设置最小分数
     if (starSelectNumber < self.miniSelectNumber) {
         return;
@@ -118,9 +111,7 @@
     _scale = starSelectNumber;
 }
 
-
 - (void)setStarTotalNumber:(NSInteger)starTotalNumber {
-
     
     if (_starTotalNumber != starTotalNumber) {
         _starTotalNumber = starTotalNumber;
@@ -139,15 +130,6 @@
         }
     }
 }
-//
-//- (void)setMiniSelectNumber:(NSInteger)miniSelectNumber {
-//
-//    _miniSelectNumber = miniSelectNumber;
-//    
-//
-//    [self judgeStarValid];
-//    
-//}
 
 
 @end

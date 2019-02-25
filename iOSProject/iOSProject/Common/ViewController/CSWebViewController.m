@@ -226,11 +226,9 @@
     UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
     
     self.backBtn.origin = CGPointMake(5, 0);
-    
     self.closeBtn.cs_x = leftView.width - self.closeBtn.width;
     
     [leftView addSubview:self.backBtn];
-    
     [leftView addSubview:self.closeBtn];
     
     return leftView;
@@ -304,11 +302,9 @@
     if(_progressView == nil && [self.parentViewController isKindOfClass:[UINavigationController class]])
     {
         UIProgressView *progressView = [[UIProgressView alloc] init];
-        
         [self.view addSubview:progressView];
         
         _progressView = progressView;
-        
         progressView.height = 1;
         progressView.width = KSCREEN_WIDTH;
         progressView.cs_y = self.navgationBar.height;
@@ -362,7 +358,6 @@
 
     [self.webView.scrollView removeObserverBlocks];
     [self.webView removeObserverBlocks];
-    
     self.webView.UIDelegate = nil;
     self.webView.navigationDelegate = nil;
     self.webView.scrollView.delegate = nil;

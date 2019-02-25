@@ -36,7 +36,8 @@ static PFAxisDirection PFAxisDirectionMake(CGFloat fromCoordinate, CGFloat toCoo
 	
 	return direction;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFAxisDirection PFDirectionMakeXAxis(CGPoint fromPoint, CGPoint toPoint) {
 	return PFAxisDirectionMake(fromPoint.x, toPoint.x, NO);
 }
@@ -52,3 +53,4 @@ static PFAxisDirection PFDirectionMakeXAxisSensitive(CGPoint fromPoint, CGPoint 
 static PFAxisDirection PFDirectionMakeYAxisSensitive(CGPoint fromPoint, CGPoint toPoint) {
 	return PFAxisDirectionMake(fromPoint.y, toPoint.y, YES);
 }
+#pragma clang diagnostic pop

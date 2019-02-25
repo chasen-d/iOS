@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E0D15DBCC9ABDE326C6BF111CA3A4509"
+               BlueprintIdentifier = "7F4359FFF03106EB96458D1B6DF7B9B0"
                BuildableName = "libYYAsyncLayer.a"
                BlueprintName = "YYAsyncLayer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E0D15DBCC9ABDE326C6BF111CA3A4509"
+            BlueprintIdentifier = "7F4359FFF03106EB96458D1B6DF7B9B0"
             BuildableName = "libYYAsyncLayer.a"
             BlueprintName = "YYAsyncLayer"
             ReferencedContainer = "container:Pods.xcodeproj">

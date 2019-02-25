@@ -9,6 +9,7 @@
 #import "CSBaseTableViewController.h"
 #import "CSArrayDataSource.h"
 
+
 static NSString *mainCellIdentifier = @"mainCellIdentifier";
 const int cellHeight = 60;
 
@@ -44,6 +45,7 @@ const int cellHeight = 60;
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
+
 }
 
 - (void)setDataSoureArray:(NSArray *)dataSoureArray

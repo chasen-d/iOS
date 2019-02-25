@@ -20,28 +20,29 @@ PODS:
     - SQLCipher
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - MJExtension (3.0.15)
-  - MJRefresh (3.1.15.3)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
   - NetworkEye (1.0.6):
     - NetworkEye/standard (= 1.0.6)
   - NetworkEye/standard (1.0.6)
   - Reachability (3.2)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
-  - SDWebImage/GIF (4.4.2):
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
+  - SDWebImage/GIF (4.4.5):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
-  - SQLCipher (3.4.2):
-    - SQLCipher/standard (= 3.4.2)
-  - SQLCipher/common (3.4.2)
-  - SQLCipher/standard (3.4.2):
+  - SQLCipher (4.0.1):
+    - SQLCipher/standard (= 4.0.1)
+  - SQLCipher/common (4.0.1)
+  - SQLCipher/standard (4.0.1):
     - SQLCipher/common
   - SVProgressHUD (2.2.5)
-  - TZImagePickerController (3.0.0)
+  - TZImagePickerController (3.1.9)
   - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WebViewJavascriptBridge (6.0.3)
   - YYAsyncLayer (1.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -50,9 +51,9 @@ PODS:
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
   - YYText (1.0.7)
-  - ZFPlayer (3.1.5):
-    - ZFPlayer/Core (= 3.1.5)
-  - ZFPlayer/Core (3.1.5)
+  - ZFPlayer (3.2.5):
+    - ZFPlayer/Core (= 3.2.5)
+  - ZFPlayer/Core (3.2.5)
 
 DEPENDENCIES:
   - AFNetworking
@@ -70,6 +71,7 @@ DEPENDENCIES:
   - SVProgressHUD
   - TZImagePickerController
   - "UITableView+FDTemplateLayoutCell"
+  - WebViewJavascriptBridge
   - YYAsyncLayer
   - YYCategories
   - YYImage
@@ -94,6 +96,7 @@ SPEC REPOS:
     - SVProgressHUD
     - TZImagePickerController
     - "UITableView+FDTemplateLayoutCell"
+    - WebViewJavascriptBridge
     - YYAsyncLayer
     - YYCategories
     - YYImage
@@ -107,22 +110,23 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJExtension: 3f039575db1b135a20699ad298713b26acec1528
-  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   NetworkEye: 54afcde161ab50e407445b86abd7350f3cd08533
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+  SQLCipher: 4636a257060f6f1b4e143a143028b61a2b462d0d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TZImagePickerController: fb2642a6530dc12eb38c14a53972fd6869327677
+  TZImagePickerController: c3f7c505d23281e21e98df6dbeae372946caa28f
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
-  ZFPlayer: 8273a62fcc76f451db043ce640434d5f8799c09a
+  ZFPlayer: 34d9832d40240971af45a27e1227c4fa97325d5a
 
-PODFILE CHECKSUM: 4042e8ff9cb166bfb10c09c3f31e2291ab57ad22
+PODFILE CHECKSUM: 0ceb70c80c0245c586c7de1be4ae9525bc20b8c0
 
 COCOAPODS: 1.5.3

@@ -12,7 +12,8 @@
 //
 //You should have received a copy of the GNU General Public License
 //along with SphereView.  If not, see <http://www.gnu.org/licenses/>.
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFMatrix PFMatrixTransform3DMakeFromPFPoint(PFPoint point) {
 	CGFloat pointRef[1][4] = {{point.x, point.y, point.z, 1}};
 	
@@ -20,7 +21,7 @@ static PFMatrix PFMatrixTransform3DMakeFromPFPoint(PFPoint point) {
 	
 	return matrix;
 }
-
+#pragma clang diagnostic pop
 static PFMatrix PFMatrixTransform3DMakeTranslation(PFPoint point) {
 	CGFloat T[4][4] = {
 		{1, 0, 0, 0},
@@ -49,7 +50,8 @@ static PFMatrix PFMatrixTransform3DMakeXRotation(PFRadian angle) {
 	
 	return matrix;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFMatrix PFMatrixTransform3DMakeXRotationOnPoint(PFPoint point, PFRadian angle) {
 	PFMatrix T = PFMatrixTransform3DMakeTranslation(PFPointMake(-point.x, -point.y, -point.z));
 	PFMatrix R = PFMatrixTransform3DMakeXRotation(angle);
@@ -57,7 +59,7 @@ static PFMatrix PFMatrixTransform3DMakeXRotationOnPoint(PFPoint point, PFRadian 
 
 	return PFMatrixMultiply(PFMatrixMultiply(T, R), T1);
 }
-
+#pragma clang diagnostic pop
 static PFMatrix PFMatrixTransform3DMakeYRotation(PFRadian angle) {
 	CGFloat c = cos(PFRadianMake(angle));
 	CGFloat s = sin(PFRadianMake(angle));
@@ -73,7 +75,8 @@ static PFMatrix PFMatrixTransform3DMakeYRotation(PFRadian angle) {
 	
 	return matrix;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFMatrix PFMatrixTransform3DMakeYRotationOnPoint(PFPoint point, PFRadian angle) {
 	PFMatrix T = PFMatrixTransform3DMakeTranslation(PFPointMake(-point.x, -point.y, -point.z));
 	PFMatrix R = PFMatrixTransform3DMakeYRotation(angle);
@@ -81,7 +84,7 @@ static PFMatrix PFMatrixTransform3DMakeYRotationOnPoint(PFPoint point, PFRadian 
 	
 	return PFMatrixMultiply(PFMatrixMultiply(T, R), T1);
 }
-
+#pragma clang diagnostic pop
 static PFMatrix PFMatrixTransform3DMakeZRotation(PFRadian angle) {
 	CGFloat c = cos(PFRadianMake(angle));
 	CGFloat s = sin(PFRadianMake(angle));
@@ -97,7 +100,8 @@ static PFMatrix PFMatrixTransform3DMakeZRotation(PFRadian angle) {
 	
 	return matrix;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFMatrix PFMatrixTransform3DMakeZRotationOnPoint(PFPoint point, PFRadian angle) {
 	PFMatrix T = PFMatrixTransform3DMakeTranslation(PFPointMake(-point.x, -point.y, -point.z));
 	PFMatrix R = PFMatrixTransform3DMakeZRotation(angle);
@@ -105,3 +109,4 @@ static PFMatrix PFMatrixTransform3DMakeZRotationOnPoint(PFPoint point, PFRadian 
 	
 	return PFMatrixMultiply(PFMatrixMultiply(T, R), T1);
 }
+#pragma clang diagnostic pop

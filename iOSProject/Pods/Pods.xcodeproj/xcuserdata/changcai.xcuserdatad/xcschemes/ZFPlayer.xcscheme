@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7EA1AEB9150490F214B7605CBCC88EB6"
+               BlueprintIdentifier = "55E6936D18BBE89364092E5ECF59BAD3"
                BuildableName = "libZFPlayer.a"
                BlueprintName = "ZFPlayer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7EA1AEB9150490F214B7605CBCC88EB6"
+            BlueprintIdentifier = "55E6936D18BBE89364092E5ECF59BAD3"
             BuildableName = "libZFPlayer.a"
             BlueprintName = "ZFPlayer"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -48,6 +48,8 @@ target 'iOSProject' do
   pod 'YYText'
   pod 'YYAsyncLayer'
   pod 'YYCategories'
+  
+  pod 'WebViewJavascriptBridge'
 
   target 'iOSProjectTests' do
     inherit! :search_paths

@@ -67,11 +67,8 @@
 //5.常用对象
 #define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
-//6.经纬度
-#define LATITUDE_DEFAULT 39.983497
-#define LONGITUDE_DEFAULT 116.318042
 
-//7.
+//6.
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 

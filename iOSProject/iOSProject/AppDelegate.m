@@ -22,17 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.backgroundColor = [UIColor randomColor];
-    
     self.window.rootViewController = [[CSTabBarController alloc]init];
-    [self.window makeKeyAndVisible];
+
     // 刷新率
-    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(0, 70, 0, 0)]];
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake((KSCREEN_WIDTH-70)/2, STATUS_BAR_HEIGHT, 0, 0)]];
     
-    NSArray <NSString *> *imagesURLS = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189872684&di=03f9df0b71bb536223236235515cf227&imgtype=0&src=http%3A%2F%2Fatt1.dzwww.com%2Fforum%2F201405%2F29%2F1033545qqmieznviecgdmm.gif", @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189851096&di=224fad7f17468c2cc080221dd78a4abf&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201505%2F12%2F20150512124019_GPjEJ.gif"];
-    // 启动广告
-    [AdvertiseHelper showAdvertiserView:imagesURLS];
+//    NSArray <NSString *> *imagesURLS = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189872684&di=03f9df0b71bb536223236235515cf227&imgtype=0&src=http%3A%2F%2Fatt1.dzwww.com%2Fforum%2F201405%2F29%2F1033545qqmieznviecgdmm.gif", @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189851096&di=224fad7f17468c2cc080221dd78a4abf&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201505%2F12%2F20150512124019_GPjEJ.gif"];
+//    // 启动广告
+//    [AdvertiseHelper showAdvertiserView:imagesURLS];
     
 #if defined(DEBUG)||defined(_DEBUG)
     [NEHTTPEye setEnabled:YES];
@@ -47,10 +44,8 @@
 
 
 #pragma mark - getter
-- (UIWindow *)window
-{
-    if(!_window)
-    {
+- (UIWindow *)window {
+    if (!_window) {
         _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _window.backgroundColor = [UIColor whiteColor];
         [_window makeKeyAndVisible];

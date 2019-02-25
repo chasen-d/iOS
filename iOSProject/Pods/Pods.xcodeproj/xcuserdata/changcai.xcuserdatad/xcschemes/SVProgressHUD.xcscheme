@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C2B53476C0BC10BAFE72BC3E8A4C211"
+               BlueprintIdentifier = "B8FD8A1E275973315CF0E3C93AECA910"
                BuildableName = "libSVProgressHUD.a"
                BlueprintName = "SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C2B53476C0BC10BAFE72BC3E8A4C211"
+            BlueprintIdentifier = "B8FD8A1E275973315CF0E3C93AECA910"
             BuildableName = "libSVProgressHUD.a"
             BlueprintName = "SVProgressHUD"
             ReferencedContainer = "container:Pods.xcodeproj">

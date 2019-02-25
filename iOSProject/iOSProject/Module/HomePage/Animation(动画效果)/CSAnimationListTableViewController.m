@@ -5,6 +5,16 @@
 //  Created by changcai on 2018/9/13.
 //  Copyright © 2018年 changcai. All rights reserved.
 //
+/*
+ 核心动画类中可以直接使用的类有：
+ 　　CABasicAnimation
+ 　　CAKeyframeAnimation
+ 　　CATransition
+ 　　CAAnimationGroup
+ 　　CASpringAnimation
+ 
+ 
+ */
 
 #import "CSAnimationListTableViewController.h"
 
@@ -18,6 +28,7 @@
     [super viewDidLoad];
     
     self.dataSoureArray = @[ @{@"title":@"列表加载动画",@"className":@"CSShowTableViewController"},
+                             @{@"title":@"基础动画",@"className":@"CSBaseAnimationViewController"}
                            ];
 }
 

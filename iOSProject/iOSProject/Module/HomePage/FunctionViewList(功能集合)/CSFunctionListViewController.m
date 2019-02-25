@@ -7,7 +7,8 @@
 //
 
 #import "CSFunctionListViewController.h"
-
+#import "NSObject+JDPropertyCode.h"
+#import "CSWeatherModel.h"
 @interface CSFunctionListViewController ()
 
 @end
@@ -20,7 +21,10 @@
     self.dataSoureArray = @[@{@"title":@"系统新版本功能封装",@"className":@"CSNewFunctionViewController"},
                            
                            ];
-
+    
+    NSDictionary *dic = @{@"weatherinfo":@{@"city":@"鍖椾含",@"cityid":@"101010100",@"temp":@"27.9",@"WD":@"鍗楅",@"WS":@"灏忎簬3绾�",@"SD":@"28%",@"AP":@"1002hPa",@"njd":@"鏆傛棤瀹炲喌",@"WSE":@"<3",@"time":@"17:55",@"sm":@"2.1",@"isRadar":@"1",@"Radar":@"JC_RADAR_AZ9010_JB"}};
+    
+    [NSObject printPropertyWithDict:dic];
 }
 
 - (void)didReceiveMemoryWarning {

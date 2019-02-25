@@ -21,7 +21,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
-    YFRatingBar *bar = [[YFRatingBar alloc] initWithFrame:CGRectMake(50, 50, 260, 100)];  // 5
+    YFRatingBar *bar = [[YFRatingBar alloc] initWithFrame:CGRectMake(50, 50, kScreenWidth, 100)];  // 5
     self.bar = bar;
     bar.viewColor = [UIColor blueColor];
     bar.starSelectNumber = 4;

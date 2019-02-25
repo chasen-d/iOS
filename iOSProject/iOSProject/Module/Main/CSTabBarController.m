@@ -10,7 +10,6 @@
 #import "CSNavigationController.h"
 
 #import "CSOneViewController.h"
-#import "CSTwoViewController.h"
 
 @interface CSTabBarController ()<UITabBarControllerDelegate>
 
@@ -35,11 +34,8 @@
     
     CSNavigationController *one = [[CSNavigationController alloc]initWithRootViewController:[[CSOneViewController alloc]init]];
     
-    CSNavigationController *two = [[CSNavigationController alloc]initWithRootViewController:[[CSTwoViewController alloc]init]];
     
-    
-    
-    self.viewControllers = @[one,two];
+    self.viewControllers = @[one];
     
 }
 
@@ -52,14 +48,9 @@
                                                  @"TabBarItemSelectedImage" : @"tabBar_essence_click_icon",
                                                  };
     
-    NSDictionary *secondTabBarItemsAttributes = @{
-                                                  @"TabBarItemTitle" : @"预演",
-                                                  @"TabBarItemImage" : @"tabBar_friendTrends_icon",
-                                                  @"TabBarItemSelectedImage" : @"tabBar_friendTrends_click_icon",
-                                                  };
 
 
-    NSArray<NSDictionary *>  *tabBarItemsAttributes = @[ firstTabBarItemsAttributes,    secondTabBarItemsAttributes,];
+    NSArray<NSDictionary *>  *tabBarItemsAttributes = @[ firstTabBarItemsAttributes];
     
     [self.childViewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         

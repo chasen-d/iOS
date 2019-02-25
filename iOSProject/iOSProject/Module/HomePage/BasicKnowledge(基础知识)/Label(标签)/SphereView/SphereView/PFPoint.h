@@ -30,24 +30,29 @@ static PFPoint PFPointMake(CGFloat x, CGFloat y, CGFloat z) {
 	
 	return p;
 }
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static PFPoint PFPointMakeFromMatrix(PFMatrix matrix) {
 	return PFPointMake(matrix.data[0][0], matrix.data[0][1], matrix.data[0][2]);
 }
+#pragma clang diagnostic pop
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static NSString *NSStringFromPFPoint(PFPoint point) {
 	NSString *str = [NSString stringWithFormat:@"(%f,%f,%f)", point.x, point.y, point.z];
 	
 	return str;
 }
-
+#pragma clang diagnostic pop
 
 #pragma mark -
 #pragma mark CGPoint methods
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wunused-function"
 static CGPoint CGPointMakeNormalizedPoint(CGPoint point, CGFloat distance) {
 	CGPoint nPoint = CGPointMake(point.x * 1/distance, point.y * 1/distance);
 	
 	return nPoint;
 }
-
+#pragma clang diagnostic pop

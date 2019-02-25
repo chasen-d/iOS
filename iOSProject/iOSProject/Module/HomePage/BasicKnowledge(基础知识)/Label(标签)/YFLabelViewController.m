@@ -27,6 +27,7 @@
                              @{@"title":@"跑马灯",@"className":@"YFMarqueeViewController"},
                              @{@"title":@"打印机特效",@"className":@"YFPrinterEffectViewController"},
                              @{@"title":@"评分条",@"className":@"YFRatingBarViewController"},
+                             @{@"title":@"底部对齐Label",@"className":@"CSBottomAligmentLabelViewController"},
                              ];
 
     
